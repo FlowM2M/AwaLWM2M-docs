@@ -615,7 +615,7 @@ var searchData=
   ['awaserverdiscoverresponse_5fgetattributevalueas_5f_5f_5fpointer',['AwaServerDiscoverResponse_GetAttributeValueAs___Pointer',['../group__DiscoverResponse__GetAttributeValueAs.html',1,'']]],
   ['awaclientgetresponse_5fgetvalueas_5f_5f_5fpointer',['AwaClientGetResponse_GetValueAs___Pointer',['../group__GetResponse__GetValueAs.html',1,'']]],
   ['awaclientgetresponse_5fgetvaluesas_5f_5f_5farraypointer',['AwaClientGetResponse_GetValuesAs___ArrayPointer',['../group__GetResponse__GetValuesAsArray.html',1,'']]],
-  ['awa_20api',['Awa API',['../index.html',1,'']]],
+  ['awa_20lwm2m_20c_20api',['Awa LWM2M C API',['../index.html',1,'']]],
   ['awaobjectdefinition_5faddresourcedefinitionas_5f_5f_5f',['AwaObjectDefinition_AddResourceDefinitionAs___',['../group__ObjectDefinition__AddResourceDefinition.html',1,'']]],
   ['awaobjectdefinition_5faddresourcedefinitionas_5f_5f_5farray',['AwaObjectDefinition_AddResourceDefinitionAs___Array',['../group__ObjectDefinition__AddResourceDefinitionAsArray.html',1,'']]],
   ['awaserverreadresponse_5fgetvalueas_5f_5f_5fpointer',['AwaServerReadResponse_GetValueAs___Pointer',['../group__ReadResponse__GetValueAs.html',1,'']]],
