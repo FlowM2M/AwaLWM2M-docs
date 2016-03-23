@@ -1,6 +1,7 @@
 <map id="include/awa/error.h" name="include/awa/error.h">
-<area shape="rect" id="node2" href="$common_8h.html" title="include/awa/common.h" alt="" coords="171,80,327,107"/>
-<area shape="rect" id="node5" href="$static_8h.html" title="include/awa/static.h" alt="" coords="333,155,472,181"/>
-<area shape="rect" id="node3" href="$client_8h.html" title="include/awa/client.h" alt="" coords="5,155,141,181"/>
-<area shape="rect" id="node4" href="$server_8h.html" title="include/awa/server.h" alt="" coords="166,155,308,181"/>
+<area shape="rect" id="node2" href="$types_8h.html" title="Provides definitions for types and enums used by Awa LWM2M API and Static API. " alt="" coords="181,80,320,107"/>
+<area shape="rect" id="node3" href="$common_8h.html" title="Provides declarations and definitions that are common to the Awa LWM2M API and Static API..." alt="" coords="77,155,232,181"/>
+<area shape="rect" id="node6" href="$static_8h.html" title="This interface enables an application to be statically embedded within the LWM2M Client and interact ..." alt="" coords="277,155,416,181"/>
+<area shape="rect" id="node4" href="$client_8h.html" title="This interface enables an application to interact with the resources hosted by the LWM2M Client Core..." alt="" coords="5,229,141,256"/>
+<area shape="rect" id="node5" href="$server_8h.html" title="This interface enables an application to interact with the LWM2M interface provided by LWM2M Server C..." alt="" coords="166,229,308,256"/>
 </map>

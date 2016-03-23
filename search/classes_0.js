@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['_5fawaobjectlink',['_AwaObjectLink',['../struct__AwaObjectLink.html',1,'']]],
-  ['_5fawaopaque',['_AwaOpaque',['../struct__AwaOpaque.html',1,'']]]
+  ['awafactorybootstrapinfo',['AwaFactoryBootstrapInfo',['../structAwaFactoryBootstrapInfo.html',1,'']]],
+  ['awaobjectlink',['AwaObjectLink',['../structAwaObjectLink.html',1,'']]],
+  ['awaopaque',['AwaOpaque',['../structAwaOpaque.html',1,'']]]
 ];

@@ -1,3 +1,4 @@
 <map id="include/awa/common.h" name="include/awa/common.h">
-<area shape="rect" id="node5" href="$error_8h.html" title="error.h" alt="" coords="283,80,340,107"/>
+<area shape="rect" id="node2" href="$types_8h.html" title="Provides definitions for types and enums used by Awa LWM2M API and Static API. " alt="" coords="15,80,80,107"/>
+<area shape="rect" id="node3" href="$error_8h.html" title="Provides definitions for Awa LWM2M Client and Server API error codes and error function declarations..." alt="" coords="53,155,111,181"/>
 </map>

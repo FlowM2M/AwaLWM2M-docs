@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data',['Data',['../struct__AwaOpaque.html#a1c1506a0227d69f9ea819e493917b9e5',1,'_AwaOpaque']]]
+  ['binding',['Binding',['../structAwaFactoryBootstrapInfo.html#a513de6832da7fe92e8e7f5f0e6bbd701',1,'AwaFactoryBootstrapInfo']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['size',['Size',['../struct__AwaOpaque.html#af27f5b51ab0dadf3a5dd8652a3a99bb6',1,'_AwaOpaque']]]
+  ['lifetime',['Lifetime',['../structAwaFactoryBootstrapInfo.html#ae3ec62150df30a77064a0efec47ce298',1,'AwaFactoryBootstrapInfo']]]
 ];

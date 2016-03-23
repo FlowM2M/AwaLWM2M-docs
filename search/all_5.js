@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mainpage_2edox',['mainpage.dox',['../mainpage_8dox.html',1,'']]]
+  ['lifetime',['Lifetime',['../structAwaFactoryBootstrapInfo.html#ae3ec62150df30a77064a0efec47ce298',1,'AwaFactoryBootstrapInfo']]]
 ];

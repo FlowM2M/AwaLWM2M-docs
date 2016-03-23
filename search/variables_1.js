@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['objectid',['ObjectID',['../struct__AwaObjectLink.html#a79f67c94a305ffb28786c9740286bb8b',1,'_AwaObjectLink']]],
-  ['objectinstanceid',['ObjectInstanceID',['../struct__AwaObjectLink.html#a33eff0f35abdba653acec84485976f18',1,'_AwaObjectLink']]]
+  ['data',['Data',['../structAwaOpaque.html#a255498f0efd8c83632dc2873e3dd37a5',1,'AwaOpaque']]],
+  ['defaultmaxperiod',['DefaultMaxPeriod',['../structAwaFactoryBootstrapInfo.html#a4497aa7bdf0e71a87e8ca276cb048b75',1,'AwaFactoryBootstrapInfo']]],
+  ['defaultminperiod',['DefaultMinPeriod',['../structAwaFactoryBootstrapInfo.html#a36255afcdc8c1ab210529a110de455a7',1,'AwaFactoryBootstrapInfo']]],
+  ['disabletimeout',['DisableTimeout',['../structAwaFactoryBootstrapInfo.html#aa6128a8cd63a1607ef99bc4fadcdd4ff',1,'AwaFactoryBootstrapInfo']]]
 ];
