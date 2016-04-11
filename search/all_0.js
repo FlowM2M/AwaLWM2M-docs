@@ -563,7 +563,7 @@ var searchData=
   ['awastaticclient_5fdefineresourcewithpointerarray',['AwaStaticClient_DefineResourceWithPointerArray',['../static_8h.html#a9828edcb81e33af15d398526588a9bf5',1,'static.h']]],
   ['awastaticclient_5ffree',['AwaStaticClient_Free',['../static_8h.html#ac56fc24058290bd3d1c6c6f35f6d282c',1,'static.h']]],
   ['awastaticclient_5fgetapplicationcontext',['AwaStaticClient_GetApplicationContext',['../static_8h.html#af53d1cc7ff6121c09ce3f7df6b2be975',1,'static.h']]],
-  ['awastaticclient_5fgetresourceinstancepointer',['AwaStaticClient_GetResourceInstancePointer',['../static_8h.html#a5b72f0ac5fb917c4c2d8760780628200',1,'static.h']]],
+  ['awastaticclient_5fgetresourceinstancepointer',['AwaStaticClient_GetResourceInstancePointer',['../static_8h.html#a91389f04944f84a9a5094a270529e127',1,'static.h']]],
   ['awastaticclient_5finit',['AwaStaticClient_Init',['../static_8h.html#ab47dd42eb1201da1686381f30003ff33',1,'static.h']]],
   ['awastaticclient_5fnew',['AwaStaticClient_New',['../static_8h.html#a2636591dc64507abf759fb4c29592186',1,'static.h']]],
   ['awastaticclient_5fobjectinstancechanged',['AwaStaticClient_ObjectInstanceChanged',['../static_8h.html#a2662920c024945d9860891d2c0d214d1',1,'static.h']]],

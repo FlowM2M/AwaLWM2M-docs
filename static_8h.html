@@ -254,9 +254,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a89fa08151dcc735731f2d99b0c17fbb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a89fa08151dcc735731f2d99b0c17fbb3">AwaStaticClient_Process</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client)</td></tr>
 <tr class="memdesc:a89fa08151dcc735731f2d99b0c17fbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the Awa Static Client.  <a href="#a89fa08151dcc735731f2d99b0c17fbb3">More...</a><br/></td></tr>
 <tr class="separator:a89fa08151dcc735731f2d99b0c17fbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b72f0ac5fb917c4c2d8760780628200"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a5b72f0ac5fb917c4c2d8760780628200">AwaStaticClient_GetResourceInstancePointer</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, <a class="el" href="types_8h.html#ad476bda64e61e614611216542e6f1b6b">AwaObjectInstanceID</a> objectInstanceID, <a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a> resourceID, <a class="el" href="types_8h.html#aa21d17f35bdc522e51276c8949e4529d">AwaResourceInstanceID</a> resourceInstanceID)</td></tr>
-<tr class="memdesc:a5b72f0ac5fb917c4c2d8760780628200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a pointer to a resource instance's data, in order to modify it within a user-specified callback handler.  <a href="#a5b72f0ac5fb917c4c2d8760780628200">More...</a><br/></td></tr>
-<tr class="separator:a5b72f0ac5fb917c4c2d8760780628200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91389f04944f84a9a5094a270529e127"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a91389f04944f84a9a5094a270529e127">AwaStaticClient_GetResourceInstancePointer</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, <a class="el" href="types_8h.html#ad476bda64e61e614611216542e6f1b6b">AwaObjectInstanceID</a> objectInstanceID, <a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a> resourceID, <a class="el" href="types_8h.html#aa21d17f35bdc522e51276c8949e4529d">AwaResourceInstanceID</a> resourceInstanceID, size_t *resourceSize)</td></tr>
+<tr class="memdesc:a91389f04944f84a9a5094a270529e127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a pointer to a resource instance's data, when defined with the with <a class="el" href="static_8h.html#a06278e802a8ea802ebf09ef523fbc853" title="Define a new resource of an existing object with a pointer to the resource&#39;s data, leaving handling of the resource to the LWM2M Client. ">AwaStaticClient_DefineResourceWithPointer</a> or <a class="el" href="static_8h.html#a9828edcb81e33af15d398526588a9bf5" title="Define a new resource of an existing object with an array of pointers to non-contiguous data...">AwaStaticClient_DefineResourceWithPointerArray</a>.  <a href="#a91389f04944f84a9a5094a270529e127">More...</a><br/></td></tr>
+<tr class="separator:a91389f04944f84a9a5094a270529e127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39769804d85870deba6b80b301b09a6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a39769804d85870deba6b80b301b09a6a">AwaStaticClient_CreateResource</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, <a class="el" href="types_8h.html#ad476bda64e61e614611216542e6f1b6b">AwaObjectInstanceID</a> objectInstanceID, <a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a> resourceID)</td></tr>
 <tr class="memdesc:a39769804d85870deba6b80b301b09a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an optional resource within the specified object instance.  <a href="#a39769804d85870deba6b80b301b09a6a">More...</a><br/></td></tr>
 <tr class="separator:a39769804d85870deba6b80b301b09a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1394,12 +1394,12 @@ AwaError_StaticClientInvalid if the client is NULL. </dd></dl>
 </dl>
 </div>
 </div>
-<a class="anchor" id="a5b72f0ac5fb917c4c2d8760780628200"></a>
+<a class="anchor" id="a91389f04944f84a9a5094a270529e127"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* AwaStaticClient_GetResourceInstancePointer </td>
+          <td class="memname">const void* AwaStaticClient_GetResourceInstancePointer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *&#160;</td>
           <td class="paramname"><em>client</em>, </td>
@@ -1426,7 +1426,13 @@ AwaError_StaticClientInvalid if the client is NULL. </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#aa21d17f35bdc522e51276c8949e4529d">AwaResourceInstanceID</a>&#160;</td>
-          <td class="paramname"><em>resourceInstanceID</em>&#160;</td>
+          <td class="paramname"><em>resourceInstanceID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>resourceSize</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1436,7 +1442,7 @@ AwaError_StaticClientInvalid if the client is NULL. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieve a pointer to a resource instance's data, in order to modify it within a user-specified callback handler. </p>
+<p>Retrieve a pointer to a resource instance's data, when defined with the with <a class="el" href="static_8h.html#a06278e802a8ea802ebf09ef523fbc853" title="Define a new resource of an existing object with a pointer to the resource&#39;s data, leaving handling of the resource to the LWM2M Client. ">AwaStaticClient_DefineResourceWithPointer</a> or <a class="el" href="static_8h.html#a9828edcb81e33af15d398526588a9bf5" title="Define a new resource of an existing object with an array of pointers to non-contiguous data...">AwaStaticClient_DefineResourceWithPointerArray</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
@@ -1444,6 +1450,7 @@ AwaError_StaticClientInvalid if the client is NULL. </dd></dl>
     <tr><td class="paramdir">[in]</td><td class="paramname">objectInstanceID</td><td>The ID of the object instance for the specified resource instance. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">resourceID</td><td>The ID of the resource for the specified resource instance. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">resourceInstanceID</td><td>The ID of the resource instance. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resourceSize</td><td>The size of the resource instance.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1490,6 +1497,8 @@ NULL if <em>client</em> is NULL or uninitialised, or the resource instance does 
 </div><div class="memdoc">
 
 <p>Create an optional resource within the specified object instance. </p>
+<p>For a resource registered with a handler this will invoke a callback with the AwaOperation_CreateResource.</p>
+<p>For a resource registered by pointer this will create the resource. For a multi-instance resource, the number of resource instances created will be the maximum defined.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
@@ -1668,7 +1677,7 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL or uninitialised. </dd><
 <hr class="footer"/><address class="footer"><small>
    <b>Copyright (c) 2016, Imagination Technologies Limited</b>
 <BR>
-Generated on Sun Apr 10 2016 21:37:13 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 11 2016 03:33:37 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
