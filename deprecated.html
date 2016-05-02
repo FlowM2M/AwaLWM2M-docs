@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>File Members</title>
+<title>Deprecated List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 <link href="creator.css" rel="stylesheet" type="text/css"/>
@@ -23,9 +23,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Structs</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -45,23 +45,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li class="current"><a href="globals.html"><span>File&#160;Members</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow3" class="tabs2">
-    <ul class="tablist">
-      <li><a href="globals.html"><span>All</span></a></li>
-      <li><a href="globals_func.html"><span>Functions</span></a></li>
-      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
-      <li class="current"><a href="globals_enum.html"><span>Enumerations</span></a></li>
-      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
-      <li><a href="globals_defs.html"><span>Macros</span></a></li>
-    </ul>
-  </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -76,43 +59,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Deprecated List </div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;<ul>
-<li>AwaChangeType
-: <a class="el" href="common_8h.html#a80f464e5f8f0e441bb5b8ada6b704e32">common.h</a>
-</li>
-<li>AwaError
-: <a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">error.h</a>
-</li>
-<li>AwaLogLevel
-: <a class="el" href="types_8h.html#a7efd0db4b3ec1176fd9938dcc0dbde39">types.h</a>
-</li>
-<li>AwaLWM2MError
-: <a class="el" href="error_8h.html#abab6fab6387541dc7b7598788a3f22b7">error.h</a>
-</li>
-<li>AwaOperation
-: <a class="el" href="static_8h.html#ae719fe00e033575216fba86a6989c77c">static.h</a>
-</li>
-<li>AwaResourceOperations
-: <a class="el" href="types_8h.html#a2dbeabe2a8e0b6bc4ebf80f75ce61379">types.h</a>
-</li>
-<li>AwaResourceType
-: <a class="el" href="types_8h.html#ae3998ef5e4ad81613806795273f4e1d3">types.h</a>
-</li>
-<li>AwaResult
-: <a class="el" href="static_8h.html#a84cadb92fb469462c9adce092c249a9f">static.h</a>
-</li>
-<li>AwaSecurityMode
-: <a class="el" href="static_8h.html#a11a1b4a5a2164d2b9426f21728318e81">static.h</a>
-</li>
-<li>AwaSubscribeType
-: <a class="el" href="common_8h.html#a0b263da42e3ff37c062bcf57bb588474">common.h</a>
-</li>
-<li>AwaWriteMode
-: <a class="el" href="server_8h.html#acf92c08aa8c9bdfbf3d672adb7914b29">server.h</a>
-</li>
-</ul>
-</div><!-- contents -->
+<div class="textblock"><dl class="reflist">
+<dt><a class="anchor" id="_deprecated000001"></a>Member <a class="el" href="static_8h.html#afb88f991576f512611d259f38efc6658">AwaStaticClient_DefineObjectWithHandler</a>  (AwaStaticClient *client, const char *objectName, AwaObjectID objectID, uint16_t minimumInstances, uint16_t maximumInstances, AwaStaticClientHandler handler)</dt>
+<dd>Use <a class="el" href="static_8h.html#a5353adc4aea9fe1d92d3b6dc07496a60" title="Define a new custom LWM2M object. ">AwaStaticClient_DefineObject</a> followed by <a class="el" href="static_8h.html#a2f060726a5f8a02874ba2b63ef7cea59" title="Set the Object Operation handler function, to be called by the LWM2M Client when object instances are...">AwaStaticClient_SetObjectOperationHandler</a> instead. </dd>
+<dt><a class="anchor" id="_deprecated000002"></a>Member <a class="el" href="static_8h.html#a41c911878d2a7d3df4ac43aedbadbed8">AwaStaticClient_DefineResourceWithHandler</a>  (AwaStaticClient *client, const char *resourceName, AwaObjectID objectID, AwaResourceID resourceID, AwaResourceType resourceType, uint16_t minimumInstances, uint16_t maximumInstances, AwaResourceOperations operations, AwaStaticClientHandler handler)</dt>
+<dd>Use <a class="el" href="static_8h.html#af79e8077c9207c93c0d10d6661776790" title="Define a new resource of an existing object. ">AwaStaticClient_DefineResource</a> followed by <a class="el" href="static_8h.html#a61f0bed2fc664550afa502ba9185ceb1" title="Set a user-specified callback handler that will be called whenever a LWM2M operation on the resource ...">AwaStaticClient_SetResourceOperationHandler</a> instead. </dd>
+<dt><a class="anchor" id="_deprecated000003"></a>Member <a class="el" href="static_8h.html#a06278e802a8ea802ebf09ef523fbc853">AwaStaticClient_DefineResourceWithPointer</a>  (AwaStaticClient *client, const char *resourceName, AwaObjectID objectID, AwaResourceID resourceID, AwaResourceType resourceType, uint16_t minimumInstances, uint16_t maximumInstances, AwaResourceOperations operations, void *dataPointer, size_t dataElementSize, size_t dataStepSize)</dt>
+<dd>Use <a class="el" href="static_8h.html#af79e8077c9207c93c0d10d6661776790" title="Define a new resource of an existing object. ">AwaStaticClient_DefineResource</a> followed by <a class="el" href="static_8h.html#ad377d1b924d1ae76694b9f77b2e43336" title="Set a resource&#39;s storage with a pointer to the resource&#39;s data, leaving handling of the resource to t...">AwaStaticClient_SetResourceStorageWithPointer</a> instead. </dd>
+<dt><a class="anchor" id="_deprecated000004"></a>Member <a class="el" href="static_8h.html#a9828edcb81e33af15d398526588a9bf5">AwaStaticClient_DefineResourceWithPointerArray</a>  (AwaStaticClient *client, const char *resourceName, AwaObjectID objectID, AwaResourceID resourceID, AwaResourceType resourceType, uint16_t minimumInstances, uint16_t maximumInstances, AwaResourceOperations operations, void *dataPointers[], size_t dataElementSize)</dt>
+<dd>Use <a class="el" href="static_8h.html#af79e8077c9207c93c0d10d6661776790" title="Define a new resource of an existing object. ">AwaStaticClient_DefineResource</a> followed by <a class="el" href="static_8h.html#a4f79b4849377ea8d7f42aa5e85983e13" title="Set a resource&#39;s storage with an array of pointers to non-contiguous data, where each piece of data s...">AwaStaticClient_SetResourceStorageWithPointerArray</a> instead.</dd>
+</dl>
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

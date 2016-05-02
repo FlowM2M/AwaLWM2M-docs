@@ -23,6 +23,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Structs</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
@@ -239,23 +240,38 @@ Functions</h2></td></tr>
 <tr class="memitem:afb88f991576f512611d259f38efc6658"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#afb88f991576f512611d259f38efc6658">AwaStaticClient_DefineObjectWithHandler</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, const char *objectName, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, uint16_t minimumInstances, uint16_t maximumInstances, <a class="el" href="static_8h.html#ac7d48623298402f813bef5f314bb87a6">AwaStaticClientHandler</a> handler)</td></tr>
 <tr class="memdesc:afb88f991576f512611d259f38efc6658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a new custom LWM2M object with a user-specified callback handler that will be called whenever a LWM2M operation on any instance of the defined object is performed.  <a href="#afb88f991576f512611d259f38efc6658">More...</a><br/></td></tr>
 <tr class="separator:afb88f991576f512611d259f38efc6658"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9b158dcc6eddbe878957ede42b56d8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#aa9b158dcc6eddbe878957ede42b56d8c">AwaStaticClient_DefineObject</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, const char *objectName, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, uint16_t minimumInstances, uint16_t maximumInstances)</td></tr>
-<tr class="memdesc:aa9b158dcc6eddbe878957ede42b56d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a new custom LWM2M object, leaving handling of any instances of the object to the LWM2M Client.  <a href="#aa9b158dcc6eddbe878957ede42b56d8c">More...</a><br/></td></tr>
-<tr class="separator:aa9b158dcc6eddbe878957ede42b56d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5353adc4aea9fe1d92d3b6dc07496a60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a5353adc4aea9fe1d92d3b6dc07496a60">AwaStaticClient_DefineObject</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, const char *objectName, uint16_t minimumInstances, uint16_t maximumInstances)</td></tr>
+<tr class="memdesc:a5353adc4aea9fe1d92d3b6dc07496a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a new custom LWM2M object.  <a href="#a5353adc4aea9fe1d92d3b6dc07496a60">More...</a><br/></td></tr>
+<tr class="separator:a5353adc4aea9fe1d92d3b6dc07496a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f060726a5f8a02874ba2b63ef7cea59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a2f060726a5f8a02874ba2b63ef7cea59">AwaStaticClient_SetObjectOperationHandler</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, <a class="el" href="static_8h.html#ac7d48623298402f813bef5f314bb87a6">AwaStaticClientHandler</a> handler)</td></tr>
+<tr class="memdesc:a2f060726a5f8a02874ba2b63ef7cea59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Object Operation handler function, to be called by the LWM2M Client when object instances are created or deleted.  <a href="#a2f060726a5f8a02874ba2b63ef7cea59">More...</a><br/></td></tr>
+<tr class="separator:a2f060726a5f8a02874ba2b63ef7cea59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79e8077c9207c93c0d10d6661776790"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#af79e8077c9207c93c0d10d6661776790">AwaStaticClient_DefineResource</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, <a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a> resourceID, const char *resourceName, <a class="el" href="types_8h.html#ae3998ef5e4ad81613806795273f4e1d3">AwaResourceType</a> resourceType, uint16_t minimumInstances, uint16_t maximumInstances, <a class="el" href="types_8h.html#a2dbeabe2a8e0b6bc4ebf80f75ce61379">AwaResourceOperations</a> operations)</td></tr>
+<tr class="memdesc:af79e8077c9207c93c0d10d6661776790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a new resource of an existing object.  <a href="#af79e8077c9207c93c0d10d6661776790">More...</a><br/></td></tr>
+<tr class="separator:af79e8077c9207c93c0d10d6661776790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f0bed2fc664550afa502ba9185ceb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a61f0bed2fc664550afa502ba9185ceb1">AwaStaticClient_SetResourceOperationHandler</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, <a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a> resourceID, <a class="el" href="static_8h.html#ac7d48623298402f813bef5f314bb87a6">AwaStaticClientHandler</a> handler)</td></tr>
+<tr class="memdesc:a61f0bed2fc664550afa502ba9185ceb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a user-specified callback handler that will be called whenever a LWM2M operation on the resource is performed.  <a href="#a61f0bed2fc664550afa502ba9185ceb1">More...</a><br/></td></tr>
+<tr class="separator:a61f0bed2fc664550afa502ba9185ceb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad377d1b924d1ae76694b9f77b2e43336"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#ad377d1b924d1ae76694b9f77b2e43336">AwaStaticClient_SetResourceStorageWithPointer</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, <a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a> resourceID, void *dataPointer, size_t dataElementSize, size_t dataStepSize)</td></tr>
+<tr class="memdesc:ad377d1b924d1ae76694b9f77b2e43336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a resource's storage with a pointer to the resource's data, leaving handling of the resource to the LWM2M Client.  <a href="#ad377d1b924d1ae76694b9f77b2e43336">More...</a><br/></td></tr>
+<tr class="separator:ad377d1b924d1ae76694b9f77b2e43336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f79b4849377ea8d7f42aa5e85983e13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a4f79b4849377ea8d7f42aa5e85983e13">AwaStaticClient_SetResourceStorageWithPointerArray</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, <a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a> resourceID, void *dataPointers[], size_t dataElementSize)</td></tr>
+<tr class="memdesc:a4f79b4849377ea8d7f42aa5e85983e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a resource's storage with an array of pointers to non-contiguous data, where each piece of data stores the resource for a single instance of its object.  <a href="#a4f79b4849377ea8d7f42aa5e85983e13">More...</a><br/></td></tr>
+<tr class="separator:a4f79b4849377ea8d7f42aa5e85983e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41c911878d2a7d3df4ac43aedbadbed8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a41c911878d2a7d3df4ac43aedbadbed8">AwaStaticClient_DefineResourceWithHandler</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, const char *resourceName, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, <a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a> resourceID, <a class="el" href="types_8h.html#ae3998ef5e4ad81613806795273f4e1d3">AwaResourceType</a> resourceType, uint16_t minimumInstances, uint16_t maximumInstances, <a class="el" href="types_8h.html#a2dbeabe2a8e0b6bc4ebf80f75ce61379">AwaResourceOperations</a> operations, <a class="el" href="static_8h.html#ac7d48623298402f813bef5f314bb87a6">AwaStaticClientHandler</a> handler)</td></tr>
 <tr class="memdesc:a41c911878d2a7d3df4ac43aedbadbed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a new resource of an existing object with a user-specified callback handler that will be called whenever a LWM2M operation on the resource is performed.  <a href="#a41c911878d2a7d3df4ac43aedbadbed8">More...</a><br/></td></tr>
 <tr class="separator:a41c911878d2a7d3df4ac43aedbadbed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06278e802a8ea802ebf09ef523fbc853"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a06278e802a8ea802ebf09ef523fbc853">AwaStaticClient_DefineResourceWithPointer</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, const char *resourceName, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, <a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a> resourceID, <a class="el" href="types_8h.html#ae3998ef5e4ad81613806795273f4e1d3">AwaResourceType</a> resourceType, uint16_t minimumInstances, uint16_t maximumInstances, <a class="el" href="types_8h.html#a2dbeabe2a8e0b6bc4ebf80f75ce61379">AwaResourceOperations</a> operations, void *dataPointer, size_t dataElementSize, size_t dataStepSize)</td></tr>
-<tr class="memdesc:a06278e802a8ea802ebf09ef523fbc853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a new resource of an existing object with a pointer to the resource's data, leaving handling of the resource to the LWM2M Client.  <a href="#a06278e802a8ea802ebf09ef523fbc853">More...</a><br/></td></tr>
+<tr class="memdesc:a06278e802a8ea802ebf09ef523fbc853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a new resource of an existing object with a pointer to the resource's data, leaving handling of the resource to the LWM2M Client. The resource's value within any of its instances may be directly modified at any time, however <a class="el" href="static_8h.html#ade15ab7717faf6f8838566d2dc61fa33" title="Mark the specified resource as changed, in order for the Awa Static Client to send notifications to a...">AwaStaticClient_ResourceChanged</a> should be called to allow notifications to be sent to any observing LWM2M servers.  <a href="#a06278e802a8ea802ebf09ef523fbc853">More...</a><br/></td></tr>
 <tr class="separator:a06278e802a8ea802ebf09ef523fbc853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9828edcb81e33af15d398526588a9bf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a9828edcb81e33af15d398526588a9bf5">AwaStaticClient_DefineResourceWithPointerArray</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, const char *resourceName, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, <a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a> resourceID, <a class="el" href="types_8h.html#ae3998ef5e4ad81613806795273f4e1d3">AwaResourceType</a> resourceType, uint16_t minimumInstances, uint16_t maximumInstances, <a class="el" href="types_8h.html#a2dbeabe2a8e0b6bc4ebf80f75ce61379">AwaResourceOperations</a> operations, void *dataPointers[], size_t dataElementSize)</td></tr>
-<tr class="memdesc:a9828edcb81e33af15d398526588a9bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a new resource of an existing object with an array of pointers to non-contiguous data, where each piece of data stores the resource for a single instance of its object.  <a href="#a9828edcb81e33af15d398526588a9bf5">More...</a><br/></td></tr>
+<tr class="memdesc:a9828edcb81e33af15d398526588a9bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a new resource of an existing object with an array of pointers to non-contiguous data, where each piece of data stores the resource for a single instance of its object. Handling of the resource is left to the LWM2M Client. The resource's value within any of its instances may be directly modified at any time, however <a class="el" href="static_8h.html#ade15ab7717faf6f8838566d2dc61fa33" title="Mark the specified resource as changed, in order for the Awa Static Client to send notifications to a...">AwaStaticClient_ResourceChanged</a> should be called to allow notifications to be sent to any observing LWM2M servers.  <a href="#a9828edcb81e33af15d398526588a9bf5">More...</a><br/></td></tr>
 <tr class="separator:a9828edcb81e33af15d398526588a9bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89fa08151dcc735731f2d99b0c17fbb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a89fa08151dcc735731f2d99b0c17fbb3">AwaStaticClient_Process</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client)</td></tr>
 <tr class="memdesc:a89fa08151dcc735731f2d99b0c17fbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the Awa Static Client.  <a href="#a89fa08151dcc735731f2d99b0c17fbb3">More...</a><br/></td></tr>
 <tr class="separator:a89fa08151dcc735731f2d99b0c17fbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91389f04944f84a9a5094a270529e127"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a91389f04944f84a9a5094a270529e127">AwaStaticClient_GetResourceInstancePointer</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, <a class="el" href="types_8h.html#ad476bda64e61e614611216542e6f1b6b">AwaObjectInstanceID</a> objectInstanceID, <a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a> resourceID, <a class="el" href="types_8h.html#aa21d17f35bdc522e51276c8949e4529d">AwaResourceInstanceID</a> resourceInstanceID, size_t *resourceSize)</td></tr>
-<tr class="memdesc:a91389f04944f84a9a5094a270529e127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a pointer to a resource instance's data, when defined with the with <a class="el" href="static_8h.html#a06278e802a8ea802ebf09ef523fbc853" title="Define a new resource of an existing object with a pointer to the resource&#39;s data, leaving handling of the resource to the LWM2M Client. ">AwaStaticClient_DefineResourceWithPointer</a> or <a class="el" href="static_8h.html#a9828edcb81e33af15d398526588a9bf5" title="Define a new resource of an existing object with an array of pointers to non-contiguous data...">AwaStaticClient_DefineResourceWithPointerArray</a>.  <a href="#a91389f04944f84a9a5094a270529e127">More...</a><br/></td></tr>
+<tr class="memdesc:a91389f04944f84a9a5094a270529e127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a pointer to a resource instance's data, when defined with the with <a class="el" href="static_8h.html#a06278e802a8ea802ebf09ef523fbc853" title="Define a new resource of an existing object with a pointer to the resource&#39;s data, leaving handling of the resource to the LWM2M Client. The resource&#39;s value within any of its instances may be directly modified at any time, however AwaStaticClient_ResourceChanged should be called to allow notifications to be sent to any observing LWM2M servers. ">AwaStaticClient_DefineResourceWithPointer</a> or <a class="el" href="static_8h.html#a9828edcb81e33af15d398526588a9bf5" title="Define a new resource of an existing object with an array of pointers to non-contiguous data...">AwaStaticClient_DefineResourceWithPointerArray</a>.  <a href="#a91389f04944f84a9a5094a270529e127">More...</a><br/></td></tr>
 <tr class="separator:a91389f04944f84a9a5094a270529e127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39769804d85870deba6b80b301b09a6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a39769804d85870deba6b80b301b09a6a">AwaStaticClient_CreateResource</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client, <a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a> objectID, <a class="el" href="types_8h.html#ad476bda64e61e614611216542e6f1b6b">AwaObjectInstanceID</a> objectInstanceID, <a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a> resourceID)</td></tr>
 <tr class="memdesc:a39769804d85870deba6b80b301b09a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an optional resource within the specified object instance.  <a href="#a39769804d85870deba6b80b301b09a6a">More...</a><br/></td></tr>
@@ -583,7 +599,7 @@ Various errors on failure. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to a newly allocated Awa Static Client instance. </dd>
 <dd>
 NULL on failure. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a0">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a7">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a15">static-client-tutorial3.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a0">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a8">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a17">static-client-tutorial3.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -613,7 +629,7 @@ NULL on failure. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>AwaError_Success on success. </dd>
 <dd>
 AwaError_LogLevelInvalid if an invalid log level is specified. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a1">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a8">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a16">static-client-tutorial3.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a1">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a9">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a18">static-client-tutorial3.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -656,7 +672,7 @@ AwaError_LogLevelInvalid if an invalid log level is specified. </dd></dl>
 AwaError_OperationInvalid if the client has already been initialised. </dd>
 <dd>
 AwaError_StaticClientInvalid if the client is NULL. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a3">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a10">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a18">static-client-tutorial3.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a3">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a11">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a20">static-client-tutorial3.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -707,7 +723,7 @@ AwaError_StaticClientInvalid if the client is NULL. </dd></dl>
 AwaError_OperationInvalid if the client has already been initialised. </dd>
 <dd>
 AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a4">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a11">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a19">static-client-tutorial3.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a4">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a12">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a21">static-client-tutorial3.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -752,7 +768,7 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
 AwaError_OperationInvalid if the client has already been initialised. </dd>
 <dd>
 AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a5">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a12">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a20">static-client-tutorial3.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a5">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a13">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a22">static-client-tutorial3.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -906,7 +922,7 @@ NULL if <em>client</em> is NULL, or no application context was set by the user. 
 AwaError_StaticClientNotConfigured if the client's endpoint name, bootstrap configuration or CoAP listen information has not been set. </dd>
 <dd>
 AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a6">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a13">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a21">static-client-tutorial3.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a6">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a14">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a23">static-client-tutorial3.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -933,7 +949,7 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a8">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a16">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a23">static-client-tutorial3.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a8">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a17">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a25">static-client-tutorial3.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -986,7 +1002,8 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
 </div><div class="memdoc">
 
 <p>Define a new custom LWM2M object with a user-specified callback handler that will be called whenever a LWM2M operation on any instance of the defined object is performed. </p>
-<p>In order for an LWM2M server to perform operations on the defined object, a matching object must be defined on the LWM2M server.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use <a class="el" href="static_8h.html#a5353adc4aea9fe1d92d3b6dc07496a60" title="Define a new custom LWM2M object. ">AwaStaticClient_DefineObject</a> followed by <a class="el" href="static_8h.html#a2f060726a5f8a02874ba2b63ef7cea59" title="Set the Object Operation handler function, to be called by the LWM2M Client when object instances are...">AwaStaticClient_SetObjectOperationHandler</a> instead.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>In order for an LWM2M server to perform operations on the defined object, a matching object must be defined on the LWM2M server.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
@@ -1003,11 +1020,10 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
 AwaError_DefinitionInvalid if <em>objectName</em> is invalid or <em>objectID</em> is out of range, or <em>minimumInstances</em> or <em>maximumInstances</em> are invalid. </dd>
 <dd>
 AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial3_8c-example.html#a8">static-client-tutorial3.c</a>.</dd>
-</dl>
+
 </div>
 </div>
-<a class="anchor" id="aa9b158dcc6eddbe878957ede42b56d8c"></a>
+<a class="anchor" id="a5353adc4aea9fe1d92d3b6dc07496a60"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1020,14 +1036,14 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>objectName</em>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a>&#160;</td>
+          <td class="paramname"><em>objectID</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a>&#160;</td>
-          <td class="paramname"><em>objectID</em>, </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>objectName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1049,8 +1065,9 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Define a new custom LWM2M object, leaving handling of any instances of the object to the LWM2M Client. </p>
-<p>In order for an LWM2M server to perform operations on the defined object, a matching object must be defined on the LWM2M server.</p>
+<p>Define a new custom LWM2M object. </p>
+<p>By default, the LWM2M Client will handle instance operations such as delete and create. Use <a class="el" href="static_8h.html#a2f060726a5f8a02874ba2b63ef7cea59" title="Set the Object Operation handler function, to be called by the LWM2M Client when object instances are...">AwaStaticClient_SetObjectOperationHandler</a> to override this default behaviour with a specified handler.</p>
+<dl class="section note"><dt>Note</dt><dd>In order for an LWM2M server to perform operations on the defined object, a matching object must be defined on the LWM2M server.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
@@ -1066,8 +1083,331 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
 AwaError_DefinitionInvalid if <em>objectName</em> is invalid or <em>objectID</em> is out of range, or <em>minimumInstances</em> or <em>maximumInstances</em> are invalid. </dd>
 <dd>
 AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial2_8c-example.html#a0">static-client-tutorial2.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial2_8c-example.html#a0">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a8">static-client-tutorial3.c</a>.</dd>
 </dl>
+</div>
+</div>
+<a class="anchor" id="a2f060726a5f8a02874ba2b63ef7cea59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a> AwaStaticClient_SetObjectOperationHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a>&#160;</td>
+          <td class="paramname"><em>objectID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="static_8h.html#ac7d48623298402f813bef5f314bb87a6">AwaStaticClientHandler</a>&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Object Operation handler function, to be called by the LWM2M Client when object instances are created or deleted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectID</td><td>An ID that uniquely identifies the object for which the handler will be associated. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>A user-specified callback handler. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AwaError_Success on success. </dd>
+<dd>
+AwaError_DefinitionInvalid if <em>objectID</em> is invalid. </dd>
+<dd>
+AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial3_8c-example.html#a9">static-client-tutorial3.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="af79e8077c9207c93c0d10d6661776790"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a> AwaStaticClient_DefineResource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a>&#160;</td>
+          <td class="paramname"><em>objectID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a>&#160;</td>
+          <td class="paramname"><em>resourceID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>resourceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae3998ef5e4ad81613806795273f4e1d3">AwaResourceType</a>&#160;</td>
+          <td class="paramname"><em>resourceType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>minimumInstances</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>maximumInstances</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2dbeabe2a8e0b6bc4ebf80f75ce61379">AwaResourceOperations</a>&#160;</td>
+          <td class="paramname"><em>operations</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define a new resource of an existing object. </p>
+<p>By default, the LWM2M Client will handle resource operations. Use <a class="el" href="static_8h.html#a61f0bed2fc664550afa502ba9185ceb1" title="Set a user-specified callback handler that will be called whenever a LWM2M operation on the resource ...">AwaStaticClient_SetResourceOperationHandler</a>, <a class="el" href="static_8h.html#ad377d1b924d1ae76694b9f77b2e43336" title="Set a resource&#39;s storage with a pointer to the resource&#39;s data, leaving handling of the resource to t...">AwaStaticClient_SetResourceStorageWithPointer</a> or <a class="el" href="static_8h.html#a4f79b4849377ea8d7f42aa5e85983e13" title="Set a resource&#39;s storage with an array of pointers to non-contiguous data, where each piece of data s...">AwaStaticClient_SetResourceStorageWithPointerArray</a> to configure whether operations are handled by the user, or directed to operate on static memory.</p>
+<dl class="section note"><dt>Note</dt><dd>In order for an LWM2M server to perform operations on the defined resource, a matching object with resources must be defined on the LWM2M server.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resourceName</td><td>A human-friendly name for the new resource. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectID</td><td>An ID that uniquely identifies the object which will contain the new resource. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resourceID</td><td>An ID that uniquely identifies the new resource within the object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resourceType</td><td>The type of the new resource. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minimumInstances</td><td>The minimum number of instances of this resource that must exist at any time. Must be less than or equal to <em>maximumInstances</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maximumInstances</td><td>The maximum number of instances of this resource that must exist at any time. Must be greater than zero. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">operations</td><td>The allowed LWM2M operations on the new resource.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AwaError_Success on success. </dd>
+<dd>
+AwaError_DefinitionInvalid if <em>resourceName</em> is invalid, or <em>objectID</em> or <em>resourceID</em> is out of range, or <em>minimumInstances</em> or <em>maximumInstances</em> are invalid. </dd>
+<dd>
+AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial2_8c-example.html#a1">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a10">static-client-tutorial3.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a61f0bed2fc664550afa502ba9185ceb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a> AwaStaticClient_SetResourceOperationHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a>&#160;</td>
+          <td class="paramname"><em>objectID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a>&#160;</td>
+          <td class="paramname"><em>resourceID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="static_8h.html#ac7d48623298402f813bef5f314bb87a6">AwaStaticClientHandler</a>&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a user-specified callback handler that will be called whenever a LWM2M operation on the resource is performed. </p>
+<dl class="section note"><dt>Note</dt><dd>This function overrides the effect of <a class="el" href="static_8h.html#ad377d1b924d1ae76694b9f77b2e43336" title="Set a resource&#39;s storage with a pointer to the resource&#39;s data, leaving handling of the resource to t...">AwaStaticClient_SetResourceStorageWithPointer</a> and <a class="el" href="static_8h.html#a4f79b4849377ea8d7f42aa5e85983e13" title="Set a resource&#39;s storage with an array of pointers to non-contiguous data, where each piece of data s...">AwaStaticClient_SetResourceStorageWithPointerArray</a>.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectID</td><td>An ID that uniquely identifies the object which will contain the new resource. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resourceID</td><td>An ID that uniquely identifies the new resource within the object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>A user-specified callback handler. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AwaError_Success on success. </dd>
+<dd>
+AwaError_DefinitionInvalid if <em>objectID</em> or <em>resourceID</em> is invalid or out of range. </dd>
+<dd>
+AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial3_8c-example.html#a13">static-client-tutorial3.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="ad377d1b924d1ae76694b9f77b2e43336"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a> AwaStaticClient_SetResourceStorageWithPointer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a>&#160;</td>
+          <td class="paramname"><em>objectID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a>&#160;</td>
+          <td class="paramname"><em>resourceID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dataPointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataElementSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataStepSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a resource's storage with a pointer to the resource's data, leaving handling of the resource to the LWM2M Client. </p>
+<p>The resource's value within any of its instances may be directly modified at any time, however <a class="el" href="static_8h.html#ade15ab7717faf6f8838566d2dc61fa33" title="Mark the specified resource as changed, in order for the Awa Static Client to send notifications to a...">AwaStaticClient_ResourceChanged</a> should be called to allow notifications to be sent to any observing LWM2M servers.</p>
+<dl class="section note"><dt>Note</dt><dd>This function overrides the effect of <a class="el" href="static_8h.html#a61f0bed2fc664550afa502ba9185ceb1" title="Set a user-specified callback handler that will be called whenever a LWM2M operation on the resource ...">AwaStaticClient_SetResourceOperationHandler</a> and <a class="el" href="static_8h.html#a4f79b4849377ea8d7f42aa5e85983e13" title="Set a resource&#39;s storage with an array of pointers to non-contiguous data, where each piece of data s...">AwaStaticClient_SetResourceStorageWithPointerArray</a>.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectID</td><td>An ID that uniquely identifies the object which will contain the new resource. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resourceID</td><td>An ID that uniquely identifies the new resource within the object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataPointer</td><td>A pointer to the resource's data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataElementSize</td><td>The size in bytes of the resource's data. Must be greater than or equal to 1. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataStepSize</td><td>The step size in bytes between the resource's data per object instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AwaError_Success on success. </dd>
+<dd>
+AwaError_DefinitionInvalid if <em>objectID</em> or <em>resourceID</em> is invalid is out of range, or <em>dataPointers</em> is NULL, or <em>dataElementSize</em> is less than 1. </dd>
+<dd>
+AwaError_StaticClientInvalid if the client is NULL. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial2_8c-example.html#a4">static-client-tutorial2.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a4f79b4849377ea8d7f42aa5e85983e13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a> AwaStaticClient_SetResourceStorageWithPointerArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a82669b80ac13e5a3035bf9e5be25c291">AwaObjectID</a>&#160;</td>
+          <td class="paramname"><em>objectID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aeeeb71b4c1d590b9f20b28c95fcef8f8">AwaResourceID</a>&#160;</td>
+          <td class="paramname"><em>resourceID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dataPointers</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataElementSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a resource's storage with an array of pointers to non-contiguous data, where each piece of data stores the resource for a single instance of its object. </p>
+<p>Handling of the resource is left to the LWM2M Client. The resource's value within any of its instances may be directly modified at any time, however <a class="el" href="static_8h.html#ade15ab7717faf6f8838566d2dc61fa33" title="Mark the specified resource as changed, in order for the Awa Static Client to send notifications to a...">AwaStaticClient_ResourceChanged</a> should be called to allow notifications to be sent to any observing LWM2M servers.</p>
+<dl class="section note"><dt>Note</dt><dd>This function overrides the effect of <a class="el" href="static_8h.html#a61f0bed2fc664550afa502ba9185ceb1" title="Set a user-specified callback handler that will be called whenever a LWM2M operation on the resource ...">AwaStaticClient_SetResourceOperationHandler</a> and <a class="el" href="static_8h.html#ad377d1b924d1ae76694b9f77b2e43336" title="Set a resource&#39;s storage with a pointer to the resource&#39;s data, leaving handling of the resource to t...">AwaStaticClient_SetResourceStorageWithPointer</a>.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectID</td><td>An ID that uniquely identifies the object which will contain the new resource. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resourceID</td><td>An ID that uniquely identifies the new resource within the object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataPointers</td><td>An array of pointers, each containing the location of the resource's data for a single object instance. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataElementSize</td><td>The size in bytes of the resource's data. Must be greater than or equal to 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AwaError_Success on success. </dd>
+<dd>
+AwaError_DefinitionInvalid if <em>objectID</em> or <em>resourceID</em> is invalid or out of range, or <em>dataPointers</em> is NULL, or <em>dataElementSize</em> is less than 1. </dd>
+<dd>
+AwaError_StaticClientInvalid if the client is NULL. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a41c911878d2a7d3df4ac43aedbadbed8"></a>
@@ -1137,7 +1477,8 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
 </div><div class="memdoc">
 
 <p>Define a new resource of an existing object with a user-specified callback handler that will be called whenever a LWM2M operation on the resource is performed. </p>
-<p>In order for an LWM2M server to perform operations on the defined resource, a matching object with resources must be defined on the LWM2M server.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Use <a class="el" href="static_8h.html#af79e8077c9207c93c0d10d6661776790" title="Define a new resource of an existing object. ">AwaStaticClient_DefineResource</a> followed by <a class="el" href="static_8h.html#a61f0bed2fc664550afa502ba9185ceb1" title="Set a user-specified callback handler that will be called whenever a LWM2M operation on the resource ...">AwaStaticClient_SetResourceOperationHandler</a> instead.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>In order for an LWM2M server to perform operations on the defined resource, a matching object with resources must be defined on the LWM2M server.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
@@ -1157,8 +1498,7 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
 AwaError_DefinitionInvalid if <em>resourceName</em> is invalid, or <em>objectID</em> or <em>resourceID</em> is out of range, or <em>minimumInstances</em> or <em>maximumInstances</em> are invalid. </dd>
 <dd>
 AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial3_8c-example.html#a9">static-client-tutorial3.c</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="a06278e802a8ea802ebf09ef523fbc853"></a>
@@ -1239,9 +1579,9 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Define a new resource of an existing object with a pointer to the resource's data, leaving handling of the resource to the LWM2M Client. </p>
-<p>The resource's value within any of its instances may be directly modified at any time, however <a class="el" href="static_8h.html#ade15ab7717faf6f8838566d2dc61fa33" title="Mark the specified resource as changed, in order for the Awa Static Client to send notifications to a...">AwaStaticClient_ResourceChanged</a> should be called to allow notifications to be sent to any observing LWM2M servers.</p>
-<p>In order for an LWM2M server to perform operations on the defined resource, a matching object with resources must be defined on the LWM2M server.</p>
+<p>Define a new resource of an existing object with a pointer to the resource's data, leaving handling of the resource to the LWM2M Client. The resource's value within any of its instances may be directly modified at any time, however <a class="el" href="static_8h.html#ade15ab7717faf6f8838566d2dc61fa33" title="Mark the specified resource as changed, in order for the Awa Static Client to send notifications to a...">AwaStaticClient_ResourceChanged</a> should be called to allow notifications to be sent to any observing LWM2M servers. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Use <a class="el" href="static_8h.html#af79e8077c9207c93c0d10d6661776790" title="Define a new resource of an existing object. ">AwaStaticClient_DefineResource</a> followed by <a class="el" href="static_8h.html#ad377d1b924d1ae76694b9f77b2e43336" title="Set a resource&#39;s storage with a pointer to the resource&#39;s data, leaving handling of the resource to t...">AwaStaticClient_SetResourceStorageWithPointer</a> instead.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>In order for an LWM2M server to perform operations on the defined resource, a matching object with resources must be defined on the LWM2M server.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
@@ -1264,8 +1604,7 @@ AwaError_DefinitionInvalid if <em>resourceName</em> is invalid, or <em>objectID<
 </dd>
 <dd>
 AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial2_8c-example.html#a1">static-client-tutorial2.c</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="a9828edcb81e33af15d398526588a9bf5"></a>
@@ -1340,9 +1679,9 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Define a new resource of an existing object with an array of pointers to non-contiguous data, where each piece of data stores the resource for a single instance of its object. </p>
-<p>Handling of the resource is left to the LWM2M Client. The resource's value within any of its instances may be directly modified at any time, however <a class="el" href="static_8h.html#ade15ab7717faf6f8838566d2dc61fa33" title="Mark the specified resource as changed, in order for the Awa Static Client to send notifications to a...">AwaStaticClient_ResourceChanged</a> should be called to allow notifications to be sent to any observing LWM2M servers.</p>
-<p>In order for an LWM2M server to perform operations on the defined resource, a matching object with resources must be defined on the LWM2M server.</p>
+<p>Define a new resource of an existing object with an array of pointers to non-contiguous data, where each piece of data stores the resource for a single instance of its object. Handling of the resource is left to the LWM2M Client. The resource's value within any of its instances may be directly modified at any time, however <a class="el" href="static_8h.html#ade15ab7717faf6f8838566d2dc61fa33" title="Mark the specified resource as changed, in order for the Awa Static Client to send notifications to a...">AwaStaticClient_ResourceChanged</a> should be called to allow notifications to be sent to any observing LWM2M servers. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Use <a class="el" href="static_8h.html#af79e8077c9207c93c0d10d6661776790" title="Define a new resource of an existing object. ">AwaStaticClient_DefineResource</a> followed by <a class="el" href="static_8h.html#a4f79b4849377ea8d7f42aa5e85983e13" title="Set a resource&#39;s storage with an array of pointers to non-contiguous data, where each piece of data s...">AwaStaticClient_SetResourceStorageWithPointerArray</a> instead.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>In order for an LWM2M server to perform operations on the defined resource, a matching object with resources must be defined on the LWM2M server.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
@@ -1390,7 +1729,7 @@ AwaError_StaticClientInvalid if the client is NULL. </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The time until this function should next be called, in milliseconds. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a7">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a14">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a22">static-client-tutorial3.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial1_8c-example.html#a7">static-client-tutorial1.c</a>, <a class="el" href="static-client-tutorial2_8c-example.html#a15">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a24">static-client-tutorial3.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1442,7 +1781,7 @@ AwaError_StaticClientInvalid if the client is NULL. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieve a pointer to a resource instance's data, when defined with the with <a class="el" href="static_8h.html#a06278e802a8ea802ebf09ef523fbc853" title="Define a new resource of an existing object with a pointer to the resource&#39;s data, leaving handling of the resource to the LWM2M Client. ">AwaStaticClient_DefineResourceWithPointer</a> or <a class="el" href="static_8h.html#a9828edcb81e33af15d398526588a9bf5" title="Define a new resource of an existing object with an array of pointers to non-contiguous data...">AwaStaticClient_DefineResourceWithPointerArray</a>. </p>
+<p>Retrieve a pointer to a resource instance's data, when defined with the with <a class="el" href="static_8h.html#a06278e802a8ea802ebf09ef523fbc853" title="Define a new resource of an existing object with a pointer to the resource&#39;s data, leaving handling of the resource to the LWM2M Client. The resource&#39;s value within any of its instances may be directly modified at any time, however AwaStaticClient_ResourceChanged should be called to allow notifications to be sent to any observing LWM2M servers. ">AwaStaticClient_DefineResourceWithPointer</a> or <a class="el" href="static_8h.html#a9828edcb81e33af15d398526588a9bf5" title="Define a new resource of an existing object with an array of pointers to non-contiguous data...">AwaStaticClient_DefineResourceWithPointerArray</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
@@ -1513,7 +1852,7 @@ NULL if <em>client</em> is NULL or uninitialised, or the resource instance does 
 AwaError_CannotCreate if the resource already exists, or no resource is defined for the specified object, object instance and resource ID. </dd>
 <dd>
 AwaError_StaticClientInvalid if <em>client</em> is NULL or uninitialised. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial2_8c-example.html#a6">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a14">static-client-tutorial3.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial2_8c-example.html#a7">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a16">static-client-tutorial3.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1561,7 +1900,7 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL or uninitialised. </dd><
 AwaError_CannotCreate if the object instance already exists, the object already contains a maximum number of object instances, or if no object is defined for the specified object ID. </dd>
 <dd>
 AwaError_StaticClientInvalid if <em>client</em> is NULL or uninitialised. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial2_8c-example.html#a5">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a13">static-client-tutorial3.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial2_8c-example.html#a6">static-client-tutorial2.c</a>, and <a class="el" href="static-client-tutorial3_8c-example.html#a15">static-client-tutorial3.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1619,7 +1958,7 @@ AwaError_DefinitionInvalid if no resource exists for the specified object, objec
 AwaError_StaticClientInvalid if <em>client</em> is NULL or uninitialised. </dd></dl>
 </li>
 </ul>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial2_8c-example.html#a15">static-client-tutorial2.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="static-client-tutorial2_8c-example.html#a16">static-client-tutorial2.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1677,7 +2016,7 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL or uninitialised. </dd><
 <hr class="footer"/><address class="footer"><small>
    <b>Copyright (c) 2016, Imagination Technologies Limited</b>
 <BR>
-Generated on Mon Apr 25 2016 21:43:50 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 2 2016 23:25:36 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
