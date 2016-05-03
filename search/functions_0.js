@@ -391,6 +391,8 @@ var searchData=
   ['awastaticclient_5fdefineresourcewithhandler',['AwaStaticClient_DefineResourceWithHandler',['../static_8h.html#a41c911878d2a7d3df4ac43aedbadbed8',1,'static.h']]],
   ['awastaticclient_5fdefineresourcewithpointer',['AwaStaticClient_DefineResourceWithPointer',['../static_8h.html#a06278e802a8ea802ebf09ef523fbc853',1,'static.h']]],
   ['awastaticclient_5fdefineresourcewithpointerarray',['AwaStaticClient_DefineResourceWithPointerArray',['../static_8h.html#a9828edcb81e33af15d398526588a9bf5',1,'static.h']]],
+  ['awastaticclient_5fdeleteobjectinstance',['AwaStaticClient_DeleteObjectInstance',['../static_8h.html#af6bb5ce4ca645e0f16190ece361d8884',1,'static.h']]],
+  ['awastaticclient_5fdeleteresource',['AwaStaticClient_DeleteResource',['../static_8h.html#aedd90c3a3f9ced237b482cb43b9b697e',1,'static.h']]],
   ['awastaticclient_5ffree',['AwaStaticClient_Free',['../static_8h.html#ac56fc24058290bd3d1c6c6f35f6d282c',1,'static.h']]],
   ['awastaticclient_5fgetapplicationcontext',['AwaStaticClient_GetApplicationContext',['../static_8h.html#af53d1cc7ff6121c09ce3f7df6b2be975',1,'static.h']]],
   ['awastaticclient_5fgetresourceinstancepointer',['AwaStaticClient_GetResourceInstancePointer',['../static_8h.html#a91389f04944f84a9a5094a270529e127',1,'static.h']]],
