@@ -37,6 +37,7 @@ var searchData=
   ['awaerror_5fsessionnotconnected',['AwaError_SessionNotConnected',['../error_8h.html#aa7aae894d475cf767e63d099b98efbacaa97243aeae36c1d3f4e72c73802b1437',1,'error.h']]],
   ['awaerror_5fstaticclientinvalid',['AwaError_StaticClientInvalid',['../error_8h.html#aa7aae894d475cf767e63d099b98efbacaf05cefe7f97685425bc1fe089e552b3d',1,'error.h']]],
   ['awaerror_5fstaticclientnotconfigured',['AwaError_StaticClientNotConfigured',['../error_8h.html#aa7aae894d475cf767e63d099b98efbaca46a20e273fb831e5310a02d803690596',1,'error.h']]],
+  ['awaerror_5fstaticclientnotinitialized',['AwaError_StaticClientNotInitialized',['../error_8h.html#aa7aae894d475cf767e63d099b98efbacace8ef5a6e55edce25257696e46f001c4',1,'error.h']]],
   ['awaerror_5fsubscriptioninvalid',['AwaError_SubscriptionInvalid',['../error_8h.html#aa7aae894d475cf767e63d099b98efbaca29d95f49166deca467d97e16719a1d0c',1,'error.h']]],
   ['awaerror_5fsuccess',['AwaError_Success',['../error_8h.html#aa7aae894d475cf767e63d099b98efbacaeaf2b7044901bc74c491c6a4b2f36d18',1,'error.h']]],
   ['awaerror_5ftimeout',['AwaError_Timeout',['../error_8h.html#aa7aae894d475cf767e63d099b98efbaca6a8803f3d8ba589ea92a5874bf3b5a47',1,'error.h']]],
