@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>AwaOpaque Struct Reference</title>
+<title>Deprecated List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 <link href="creator.css" rel="stylesheet" type="text/css"/>
@@ -23,7 +23,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Structs</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="annotated.html"><span>Structs</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
@@ -44,13 +45,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Struct&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Struct&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Struct&#160;Members</span></a></li>
-    </ul>
-  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,72 +61,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structAwaOpaque-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AwaOpaque Struct Reference</div>  </div>
+<div class="title">Deprecated List </div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A utility struct used to convey data pointer and size of an opaque data block.  
- <a href="structAwaOpaque.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="types_8h_source.html">types.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a255498f0efd8c83632dc2873e3dd37a5"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAwaOpaque.html#a255498f0efd8c83632dc2873e3dd37a5">Data</a></td></tr>
-<tr class="memdesc:a255498f0efd8c83632dc2873e3dd37a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to opaque data  <a href="#a255498f0efd8c83632dc2873e3dd37a5">More...</a><br/></td></tr>
-<tr class="separator:a255498f0efd8c83632dc2873e3dd37a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a941796b94d0d751cd7e147616e3cebd4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAwaOpaque.html#a941796b94d0d751cd7e147616e3cebd4">Size</a></td></tr>
-<tr class="memdesc:a941796b94d0d751cd7e147616e3cebd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of opaque data block  <a href="#a941796b94d0d751cd7e147616e3cebd4">More...</a><br/></td></tr>
-<tr class="separator:a941796b94d0d751cd7e147616e3cebd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A utility struct used to convey data pointer and size of an opaque data block. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client-subscribe-to-execute-example_8c-example.html#_a0">client-subscribe-to-execute-example.c</a>, and <a class="el" href="server-execute-arguments-example_8c-example.html#_a3">server-execute-arguments-example.c</a>.</dd>
-</dl></div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a255498f0efd8c83632dc2873e3dd37a5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* AwaOpaque::Data</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>pointer to opaque data </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-execute-arguments-example_8c-example.html#a4">server-execute-arguments-example.c</a>.</dd>
+<div class="textblock"><dl class="reflist">
+<dt><a class="anchor" id="_deprecated000001"></a>Member <a class="el" href="static_8h.html#afb88f991576f512611d259f38efc6658">AwaStaticClient_DefineObjectWithHandler</a>  (AwaStaticClient *client, const char *objectName, AwaObjectID objectID, uint16_t minimumInstances, uint16_t maximumInstances, AwaStaticClientHandler handler)</dt>
+<dd>Use <a class="el" href="static_8h.html#a5353adc4aea9fe1d92d3b6dc07496a60" title="Define a new custom LWM2M object. ">AwaStaticClient_DefineObject</a> followed by <a class="el" href="static_8h.html#a2f060726a5f8a02874ba2b63ef7cea59" title="Set the Object Operation handler function, to be called by the LWM2M Client when object instances are...">AwaStaticClient_SetObjectOperationHandler</a> instead. </dd>
+<dt><a class="anchor" id="_deprecated000002"></a>Member <a class="el" href="static_8h.html#a41c911878d2a7d3df4ac43aedbadbed8">AwaStaticClient_DefineResourceWithHandler</a>  (AwaStaticClient *client, const char *resourceName, AwaObjectID objectID, AwaResourceID resourceID, AwaResourceType resourceType, uint16_t minimumInstances, uint16_t maximumInstances, AwaResourceOperations operations, AwaStaticClientHandler handler)</dt>
+<dd>Use <a class="el" href="static_8h.html#af79e8077c9207c93c0d10d6661776790" title="Define a new resource of an existing object. ">AwaStaticClient_DefineResource</a> followed by <a class="el" href="static_8h.html#a61f0bed2fc664550afa502ba9185ceb1" title="Set a user-specified callback handler that will be called whenever a LWM2M operation on the resource ...">AwaStaticClient_SetResourceOperationHandler</a> instead. </dd>
+<dt><a class="anchor" id="_deprecated000003"></a>Member <a class="el" href="static_8h.html#a06278e802a8ea802ebf09ef523fbc853">AwaStaticClient_DefineResourceWithPointer</a>  (AwaStaticClient *client, const char *resourceName, AwaObjectID objectID, AwaResourceID resourceID, AwaResourceType resourceType, uint16_t minimumInstances, uint16_t maximumInstances, AwaResourceOperations operations, void *dataPointer, size_t dataElementSize, size_t dataStepSize)</dt>
+<dd>Use <a class="el" href="static_8h.html#af79e8077c9207c93c0d10d6661776790" title="Define a new resource of an existing object. ">AwaStaticClient_DefineResource</a> followed by <a class="el" href="static_8h.html#ad377d1b924d1ae76694b9f77b2e43336" title="Set a resource&#39;s storage with a pointer to the resource&#39;s data, leaving handling of the resource to t...">AwaStaticClient_SetResourceStorageWithPointer</a> instead. </dd>
+<dt><a class="anchor" id="_deprecated000004"></a>Member <a class="el" href="static_8h.html#a9828edcb81e33af15d398526588a9bf5">AwaStaticClient_DefineResourceWithPointerArray</a>  (AwaStaticClient *client, const char *resourceName, AwaObjectID objectID, AwaResourceID resourceID, AwaResourceType resourceType, uint16_t minimumInstances, uint16_t maximumInstances, AwaResourceOperations operations, void *dataPointers[], size_t dataElementSize)</dt>
+<dd>Use <a class="el" href="static_8h.html#af79e8077c9207c93c0d10d6661776790" title="Define a new resource of an existing object. ">AwaStaticClient_DefineResource</a> followed by <a class="el" href="static_8h.html#a4f79b4849377ea8d7f42aa5e85983e13" title="Set a resource&#39;s storage with an array of pointers to non-contiguous data, where each piece of data s...">AwaStaticClient_SetResourceStorageWithPointerArray</a> instead.</dd>
 </dl>
-</div>
-</div>
-<a class="anchor" id="a941796b94d0d751cd7e147616e3cebd4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t AwaOpaque::Size</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>size of opaque data block </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client-subscribe-to-execute-example_8c-example.html#a1">client-subscribe-to-execute-example.c</a>, and <a class="el" href="server-execute-arguments-example_8c-example.html#a5">server-execute-arguments-example.c</a>.</dd>
-</dl>
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/awa/<a class="el" href="types_8h_source.html">types.h</a></li>
-</ul>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
    <b>Copyright (c) 2016, Imagination Technologies Limited</b>
 <BR>
-Generated on Tue May 17 2016 05:30:28 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 3 2016 06:05:46 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
