@@ -97,6 +97,15 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a61bc3818264cb0862539a058f0c2de6a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#a61bc3818264cb0862539a058f0c2de6a">AwaServerObservationCallback</a> )(const <a class="el" href="common_8h.html#aefd3ee0ba221d12614dab7144ac4a15e">AwaChangeSet</a> *changeSet, void *context)</td></tr>
 <tr class="memdesc:a61bc3818264cb0862539a058f0c2de6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user-specified callback handler for an Observation which will be fired on AwaServerSession_DispatchCallbacks if the subscribed entity has changed since the observation's session callbacks were last dispatched.  <a href="#a61bc3818264cb0862539a058f0c2de6a">More...</a><br/></td></tr>
 <tr class="separator:a61bc3818264cb0862539a058f0c2de6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19ba143bfca93153603e824178efb21"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#ab19ba143bfca93153603e824178efb21">AwaServerClientRegisterEventCallback</a> )(const AwaServerClientRegisterEvent *event, void *context)</td></tr>
+<tr class="memdesc:ab19ba143bfca93153603e824178efb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user-specified callback handler for Server Notifications which will be fired on client registration.  <a href="#ab19ba143bfca93153603e824178efb21">More...</a><br/></td></tr>
+<tr class="separator:ab19ba143bfca93153603e824178efb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83e345ddc83e799c51affc7d39992eb"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#ae83e345ddc83e799c51affc7d39992eb">AwaServerClientUpdateEventCallback</a> )(const AwaServerClientUpdateEvent *event, void *context)</td></tr>
+<tr class="memdesc:ae83e345ddc83e799c51affc7d39992eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user-specified callback handler for Server Notifications which will be fired on client update.  <a href="#ae83e345ddc83e799c51affc7d39992eb">More...</a><br/></td></tr>
+<tr class="separator:ae83e345ddc83e799c51affc7d39992eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770fcc86eaf9a297f5e4abe9dacb6626"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#a770fcc86eaf9a297f5e4abe9dacb6626">AwaServerClientDeregisterEventCallback</a> )(const AwaServerClientDeregisterEvent *event, void *context)</td></tr>
+<tr class="memdesc:a770fcc86eaf9a297f5e4abe9dacb6626"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user-specified callback handler for Server Notifications which will be fired on client deregister.  <a href="#a770fcc86eaf9a297f5e4abe9dacb6626">More...</a><br/></td></tr>
+<tr class="separator:a770fcc86eaf9a297f5e4abe9dacb6626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -525,6 +534,30 @@ AwaServerWriteAttributesResponse *&#160;</td><td class="memItemRight" valign="bo
 <tr class="memitem:acc7ac9019f7db167ad7e786befe18897"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#acc7ac9019f7db167ad7e786befe18897">AwaChangeSet_GetClientID</a> (const <a class="el" href="common_8h.html#aefd3ee0ba221d12614dab7144ac4a15e">AwaChangeSet</a> *changeSet)</td></tr>
 <tr class="memdesc:acc7ac9019f7db167ad7e786befe18897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the corresponding client ID for a ChangeSet.  <a href="#acc7ac9019f7db167ad7e786befe18897">More...</a><br/></td></tr>
 <tr class="separator:acc7ac9019f7db167ad7e786befe18897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a463d449a3fe7505276466739b0fcc1e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#a463d449a3fe7505276466739b0fcc1e0">AwaServerSession_SetClientRegisterEventCallback</a> (AwaServerSession *session, <a class="el" href="server_8h.html#ab19ba143bfca93153603e824178efb21">AwaServerClientRegisterEventCallback</a> callback, void *context)</td></tr>
+<tr class="memdesc:a463d449a3fe7505276466739b0fcc1e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a callback function to be called whenever a Client registers with the server.  <a href="#a463d449a3fe7505276466739b0fcc1e0">More...</a><br/></td></tr>
+<tr class="separator:a463d449a3fe7505276466739b0fcc1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa959f87758e2115330c541c5bb1ba6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#aaa959f87758e2115330c541c5bb1ba6f">AwaServerSession_SetClientUpdateEventCallback</a> (AwaServerSession *session, <a class="el" href="server_8h.html#ae83e345ddc83e799c51affc7d39992eb">AwaServerClientUpdateEventCallback</a> callback, void *context)</td></tr>
+<tr class="memdesc:aaa959f87758e2115330c541c5bb1ba6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a callback function to be called whenever a Client updates its registration with the server.  <a href="#aaa959f87758e2115330c541c5bb1ba6f">More...</a><br/></td></tr>
+<tr class="separator:aaa959f87758e2115330c541c5bb1ba6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52bf73f3cb96947cee95cbac5d7d2115"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#a52bf73f3cb96947cee95cbac5d7d2115">AwaServerSession_SetClientDeregisterEventCallback</a> (AwaServerSession *session, <a class="el" href="server_8h.html#a770fcc86eaf9a297f5e4abe9dacb6626">AwaServerClientDeregisterEventCallback</a> callback, void *context)</td></tr>
+<tr class="memdesc:a52bf73f3cb96947cee95cbac5d7d2115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a callback function to be called whenever a Client deregisters with the server.  <a href="#a52bf73f3cb96947cee95cbac5d7d2115">More...</a><br/></td></tr>
+<tr class="separator:a52bf73f3cb96947cee95cbac5d7d2115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103124a9ed490f21f77c9ba2f564f69c"><td class="memItemLeft" align="right" valign="top">AwaClientIterator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#a103124a9ed490f21f77c9ba2f564f69c">AwaServerClientRegisterEvent_NewClientIterator</a> (const AwaServerClientRegisterEvent *event)</td></tr>
+<tr class="memdesc:a103124a9ed490f21f77c9ba2f564f69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Client Iterator from a Client Register Event, used to iterate through the list of client endpoint names (IDs) held by the event.  <a href="#a103124a9ed490f21f77c9ba2f564f69c">More...</a><br/></td></tr>
+<tr class="separator:a103124a9ed490f21f77c9ba2f564f69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6fed520a0f262513734505e07aa27f"><td class="memItemLeft" align="right" valign="top">AwaClientIterator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#aef6fed520a0f262513734505e07aa27f">AwaServerClientUpdateEvent_NewClientIterator</a> (const AwaServerClientUpdateEvent *event)</td></tr>
+<tr class="memdesc:aef6fed520a0f262513734505e07aa27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Client Iterator from a Client Update Event, used to iterate through the list of client endpoint names (IDs) held by the event.  <a href="#aef6fed520a0f262513734505e07aa27f">More...</a><br/></td></tr>
+<tr class="separator:aef6fed520a0f262513734505e07aa27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98941b88412e09790f414db276c1384"><td class="memItemLeft" align="right" valign="top">AwaClientIterator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#ab98941b88412e09790f414db276c1384">AwaServerClientDeregisterEvent_NewClientIterator</a> (const AwaServerClientDeregisterEvent *event)</td></tr>
+<tr class="memdesc:ab98941b88412e09790f414db276c1384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Client Iterator from a Client Deregister Event, used to iterate through the list of client endpoint names (IDs) held by the event.  <a href="#ab98941b88412e09790f414db276c1384">More...</a><br/></td></tr>
+<tr class="separator:ab98941b88412e09790f414db276c1384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad243625ccdb11b29c19599cfa51c1996"><td class="memItemLeft" align="right" valign="top">AwaRegisteredEntityIterator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#ad243625ccdb11b29c19599cfa51c1996">AwaServerClientRegisterEvent_NewRegisteredEntityIterator</a> (const AwaServerClientRegisterEvent *event, const char *clientID)</td></tr>
+<tr class="memdesc:ad243625ccdb11b29c19599cfa51c1996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Registered Entity iterator for a Client Register Event, used to iterate through the list of objects and object instances that exist within the client the event relates to.  <a href="#ad243625ccdb11b29c19599cfa51c1996">More...</a><br/></td></tr>
+<tr class="separator:ad243625ccdb11b29c19599cfa51c1996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f4fff008a04cf86d5ee7d820b851c3"><td class="memItemLeft" align="right" valign="top">AwaRegisteredEntityIterator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#a39f4fff008a04cf86d5ee7d820b851c3">AwaServerClientUpdateEvent_NewRegisteredEntityIterator</a> (const AwaServerClientUpdateEvent *event, const char *clientID)</td></tr>
+<tr class="memdesc:a39f4fff008a04cf86d5ee7d820b851c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Registered Entity iterator for a Client Update Event, used to iterate through the list of objects and object instances that exist within the client the event relates to.  <a href="#a39f4fff008a04cf86d5ee7d820b851c3">More...</a><br/></td></tr>
+<tr class="separator:a39f4fff008a04cf86d5ee7d820b851c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface enables an application to interact with the LWM2M interface provided by LWM2M Server Core. </p>
@@ -548,7 +581,70 @@ AwaServerWriteAttributesResponse *&#160;</td><td class="memItemRight" valign="bo
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">changeSet</td><td>A pointer to a valid ChangeSet. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>A pointer to user-specified data passed to AwaServerObservation_New </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>A pointer to user-specified data passed to <a class="el" href="server_8h.html#ad44853332c9ca9ad80837eb772a00525" title="Allocate and return a pointer to a new Observation, that can be used to observe to changes on either ...">AwaServerObservation_New</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab19ba143bfca93153603e824178efb21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* AwaServerClientRegisterEventCallback)(const AwaServerClientRegisterEvent *event, void *context)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A user-specified callback handler for Server Notifications which will be fired on client registration. </p>
+<p>Warning: Do NOT process any operations while inside this callback! </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>A pointer to user-specified data passed to <a class="el" href="server_8h.html#a463d449a3fe7505276466739b0fcc1e0" title="Sets a callback function to be called whenever a Client registers with the server. ">AwaServerSession_SetClientRegisterEventCallback</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae83e345ddc83e799c51affc7d39992eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* AwaServerClientUpdateEventCallback)(const AwaServerClientUpdateEvent *event, void *context)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A user-specified callback handler for Server Notifications which will be fired on client update. </p>
+<p>Warning: Do NOT process any operations while inside this callback! </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>A pointer to user-specified data passed to <a class="el" href="server_8h.html#aaa959f87758e2115330c541c5bb1ba6f" title="Sets a callback function to be called whenever a Client updates its registration with the server...">AwaServerSession_SetClientUpdateEventCallback</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a770fcc86eaf9a297f5e4abe9dacb6626"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* AwaServerClientDeregisterEventCallback)(const AwaServerClientDeregisterEvent *event, void *context)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A user-specified callback handler for Server Notifications which will be fired on client deregister. </p>
+<p>Warning: Do NOT process any operations while inside this callback! </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>A pointer to user-specified data passed to <a class="el" href="server_8h.html#a52bf73f3cb96947cee95cbac5d7d2115" title="Sets a callback function to be called whenever a Client deregisters with the server. ">AwaServerSession_SetClientDeregisterEventCallback</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -601,7 +697,7 @@ AwaServerWriteAttributesResponse *&#160;</td><td class="memItemRight" valign="bo
 <dl class="section return"><dt>Returns</dt><dd>Pointer to new client session. </dd>
 <dd>
 NULL on error. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client-subscribe-to-execute-example_8c-example.html#a4">client-subscribe-to-execute-example.c</a>, <a class="el" href="server-defineset-example_8c-example.html#a0">server-defineset-example.c</a>, <a class="el" href="server-delete-object-instance-example_8c-example.html#a0">server-delete-object-instance-example.c</a>, <a class="el" href="server-execute-arguments-example_8c-example.html#a0">server-execute-arguments-example.c</a>, <a class="el" href="server-execute-example_8c-example.html#a0">server-execute-example.c</a>, <a class="el" href="server-list-clients-example_8c-example.html#a0">server-list-clients-example.c</a>, <a class="el" href="server-observe-example_8c-example.html#a1">server-observe-example.c</a>, <a class="el" href="server-read-example_8c-example.html#a0">server-read-example.c</a>, <a class="el" href="server-write-create-example_8c-example.html#a0">server-write-create-example.c</a>, <a class="el" href="server-write-create-unspecified-instance-example_8c-example.html#a0">server-write-create-unspecified-instance-example.c</a>, and <a class="el" href="server-write-example_8c-example.html#a0">server-write-example.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client-subscribe-to-execute-example_8c-example.html#a4">client-subscribe-to-execute-example.c</a>, <a class="el" href="server-defineset-example_8c-example.html#a0">server-defineset-example.c</a>, <a class="el" href="server-delete-object-instance-example_8c-example.html#a0">server-delete-object-instance-example.c</a>, <a class="el" href="server-event-example_8c-example.html#a11">server-event-example.c</a>, <a class="el" href="server-execute-arguments-example_8c-example.html#a0">server-execute-arguments-example.c</a>, <a class="el" href="server-execute-example_8c-example.html#a0">server-execute-example.c</a>, <a class="el" href="server-list-clients-example_8c-example.html#a0">server-list-clients-example.c</a>, <a class="el" href="server-observe-example_8c-example.html#a1">server-observe-example.c</a>, <a class="el" href="server-read-example_8c-example.html#a0">server-read-example.c</a>, <a class="el" href="server-write-create-example_8c-example.html#a0">server-write-create-example.c</a>, <a class="el" href="server-write-create-unspecified-instance-example_8c-example.html#a0">server-write-create-unspecified-instance-example.c</a>, and <a class="el" href="server-write-example_8c-example.html#a0">server-write-example.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -679,7 +775,7 @@ AwaError_SessionInvalid if the specified session is invalid. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>AwaError_Success on success. </dd>
 <dd>
 Various errors on failure. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client-subscribe-to-execute-example_8c-example.html#a6">client-subscribe-to-execute-example.c</a>, <a class="el" href="server-defineset-example_8c-example.html#a1">server-defineset-example.c</a>, <a class="el" href="server-delete-object-instance-example_8c-example.html#a1">server-delete-object-instance-example.c</a>, <a class="el" href="server-execute-arguments-example_8c-example.html#a1">server-execute-arguments-example.c</a>, <a class="el" href="server-execute-example_8c-example.html#a1">server-execute-example.c</a>, <a class="el" href="server-list-clients-example_8c-example.html#a1">server-list-clients-example.c</a>, <a class="el" href="server-observe-example_8c-example.html#a2">server-observe-example.c</a>, <a class="el" href="server-read-example_8c-example.html#a1">server-read-example.c</a>, <a class="el" href="server-write-create-example_8c-example.html#a1">server-write-create-example.c</a>, <a class="el" href="server-write-create-unspecified-instance-example_8c-example.html#a1">server-write-create-unspecified-instance-example.c</a>, and <a class="el" href="server-write-example_8c-example.html#a1">server-write-example.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client-subscribe-to-execute-example_8c-example.html#a6">client-subscribe-to-execute-example.c</a>, <a class="el" href="server-defineset-example_8c-example.html#a1">server-defineset-example.c</a>, <a class="el" href="server-delete-object-instance-example_8c-example.html#a1">server-delete-object-instance-example.c</a>, <a class="el" href="server-event-example_8c-example.html#a12">server-event-example.c</a>, <a class="el" href="server-execute-arguments-example_8c-example.html#a1">server-execute-arguments-example.c</a>, <a class="el" href="server-execute-example_8c-example.html#a1">server-execute-example.c</a>, <a class="el" href="server-list-clients-example_8c-example.html#a1">server-list-clients-example.c</a>, <a class="el" href="server-observe-example_8c-example.html#a2">server-observe-example.c</a>, <a class="el" href="server-read-example_8c-example.html#a1">server-read-example.c</a>, <a class="el" href="server-write-create-example_8c-example.html#a1">server-write-create-example.c</a>, <a class="el" href="server-write-create-unspecified-instance-example_8c-example.html#a1">server-write-create-unspecified-instance-example.c</a>, and <a class="el" href="server-write-example_8c-example.html#a1">server-write-example.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -855,7 +951,7 @@ NULL if the session is not valid. </dd></dl>
 AwaError_Timeout if no response is received after the timeout duration expires. </dd>
 <dd>
 Various errors on failure. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-observe-example_8c-example.html#a13">server-observe-example.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a16">server-event-example.c</a>, and <a class="el" href="server-observe-example_8c-example.html#a13">server-observe-example.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -883,7 +979,7 @@ Various errors on failure. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>AwaError_Success on success. </dd>
 <dd>
 Various errors on failure. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-observe-example_8c-example.html#a14">server-observe-example.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a17">server-event-example.c</a>, and <a class="el" href="server-observe-example_8c-example.html#a14">server-observe-example.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -916,7 +1012,7 @@ AwaError_IPCError if the session is not configured. </dd>
 AwaError_SessionNotConnected if the session is not connected. </dd>
 <dd>
 AwaError_SessionInvalid if the session is invalid. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client-subscribe-to-execute-example_8c-example.html#a22">client-subscribe-to-execute-example.c</a>, <a class="el" href="server-defineset-example_8c-example.html#a14">server-defineset-example.c</a>, <a class="el" href="server-delete-object-instance-example_8c-example.html#a6">server-delete-object-instance-example.c</a>, <a class="el" href="server-execute-arguments-example_8c-example.html#a9">server-execute-arguments-example.c</a>, <a class="el" href="server-execute-example_8c-example.html#a6">server-execute-example.c</a>, <a class="el" href="server-list-clients-example_8c-example.html#a14">server-list-clients-example.c</a>, <a class="el" href="server-observe-example_8c-example.html#a17">server-observe-example.c</a>, <a class="el" href="server-read-example_8c-example.html#a8">server-read-example.c</a>, <a class="el" href="server-write-create-example_8c-example.html#a7">server-write-create-example.c</a>, <a class="el" href="server-write-create-unspecified-instance-example_8c-example.html#a11">server-write-create-unspecified-instance-example.c</a>, and <a class="el" href="server-write-example_8c-example.html#a7">server-write-example.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client-subscribe-to-execute-example_8c-example.html#a22">client-subscribe-to-execute-example.c</a>, <a class="el" href="server-defineset-example_8c-example.html#a14">server-defineset-example.c</a>, <a class="el" href="server-delete-object-instance-example_8c-example.html#a6">server-delete-object-instance-example.c</a>, <a class="el" href="server-event-example_8c-example.html#a18">server-event-example.c</a>, <a class="el" href="server-execute-arguments-example_8c-example.html#a9">server-execute-arguments-example.c</a>, <a class="el" href="server-execute-example_8c-example.html#a6">server-execute-example.c</a>, <a class="el" href="server-list-clients-example_8c-example.html#a14">server-list-clients-example.c</a>, <a class="el" href="server-observe-example_8c-example.html#a17">server-observe-example.c</a>, <a class="el" href="server-read-example_8c-example.html#a8">server-read-example.c</a>, <a class="el" href="server-write-create-example_8c-example.html#a7">server-write-create-example.c</a>, <a class="el" href="server-write-create-unspecified-instance-example_8c-example.html#a11">server-write-create-unspecified-instance-example.c</a>, and <a class="el" href="server-write-example_8c-example.html#a7">server-write-example.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -945,7 +1041,7 @@ AwaError_SessionInvalid if the session is invalid. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>AwaError_Success on success. </dd>
 <dd>
 AwaError_SessionInvalid if the session is not valid. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client-subscribe-to-execute-example_8c-example.html#a23">client-subscribe-to-execute-example.c</a>, <a class="el" href="server-defineset-example_8c-example.html#a15">server-defineset-example.c</a>, <a class="el" href="server-delete-object-instance-example_8c-example.html#a7">server-delete-object-instance-example.c</a>, <a class="el" href="server-execute-arguments-example_8c-example.html#a10">server-execute-arguments-example.c</a>, <a class="el" href="server-execute-example_8c-example.html#a7">server-execute-example.c</a>, <a class="el" href="server-list-clients-example_8c-example.html#a15">server-list-clients-example.c</a>, <a class="el" href="server-observe-example_8c-example.html#a18">server-observe-example.c</a>, <a class="el" href="server-read-example_8c-example.html#a9">server-read-example.c</a>, <a class="el" href="server-write-create-example_8c-example.html#a8">server-write-create-example.c</a>, <a class="el" href="server-write-create-unspecified-instance-example_8c-example.html#a12">server-write-create-unspecified-instance-example.c</a>, and <a class="el" href="server-write-example_8c-example.html#a8">server-write-example.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="client-subscribe-to-execute-example_8c-example.html#a23">client-subscribe-to-execute-example.c</a>, <a class="el" href="server-defineset-example_8c-example.html#a15">server-defineset-example.c</a>, <a class="el" href="server-delete-object-instance-example_8c-example.html#a7">server-delete-object-instance-example.c</a>, <a class="el" href="server-event-example_8c-example.html#a19">server-event-example.c</a>, <a class="el" href="server-execute-arguments-example_8c-example.html#a10">server-execute-arguments-example.c</a>, <a class="el" href="server-execute-example_8c-example.html#a7">server-execute-example.c</a>, <a class="el" href="server-list-clients-example_8c-example.html#a15">server-list-clients-example.c</a>, <a class="el" href="server-observe-example_8c-example.html#a18">server-observe-example.c</a>, <a class="el" href="server-read-example_8c-example.html#a9">server-read-example.c</a>, <a class="el" href="server-write-create-example_8c-example.html#a8">server-write-create-example.c</a>, <a class="el" href="server-write-create-unspecified-instance-example_8c-example.html#a12">server-write-create-unspecified-instance-example.c</a>, and <a class="el" href="server-write-example_8c-example.html#a8">server-write-example.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1205,7 +1301,7 @@ AwaError_OperationInvalid if the operation is not valid. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the Client Iterator is valid and the iterator has not yet reached the end of its elements. </dd>
 <dd>
 False if the Client Iterator is invalid, or has reached the end of its elements. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-list-clients-example_8c-example.html#a5">server-list-clients-example.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a1">server-event-example.c</a>, and <a class="el" href="server-list-clients-example_8c-example.html#a5">server-list-clients-example.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1233,7 +1329,7 @@ False if the Client Iterator is invalid, or has reached the end of its elements.
 <dl class="section return"><dt>Returns</dt><dd>The client ID if the Client Iterator is valid. </dd>
 <dd>
 NULL if the Client Iterator is invalid. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-list-clients-example_8c-example.html#a6">server-list-clients-example.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a2">server-event-example.c</a>, and <a class="el" href="server-list-clients-example_8c-example.html#a6">server-list-clients-example.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1259,7 +1355,7 @@ NULL if the Client Iterator is invalid. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-list-clients-example_8c-example.html#a12">server-list-clients-example.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a7">server-event-example.c</a>, and <a class="el" href="server-list-clients-example_8c-example.html#a12">server-list-clients-example.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1317,7 +1413,7 @@ NULL on failure. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the Registered Entity Iterator is valid and the iterator has not yet reached the end of its elements. </dd>
 <dd>
 False if the Registered Entity Iterator is invalid, or has reached the end of its elements. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-list-clients-example_8c-example.html#a9">server-list-clients-example.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a4">server-event-example.c</a>, and <a class="el" href="server-list-clients-example_8c-example.html#a9">server-list-clients-example.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1345,7 +1441,7 @@ False if the Registered Entity Iterator is invalid, or has reached the end of it
 <dl class="section return"><dt>Returns</dt><dd>The path if the Registered Entity Iterator is valid. </dd>
 <dd>
 NULL if the Registered Entity Iterator is invalid. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-list-clients-example_8c-example.html#a10">server-list-clients-example.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a5">server-event-example.c</a>, and <a class="el" href="server-list-clients-example_8c-example.html#a10">server-list-clients-example.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1371,7 +1467,7 @@ NULL if the Registered Entity Iterator is invalid. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-list-clients-example_8c-example.html#a11">server-list-clients-example.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a6">server-event-example.c</a>, and <a class="el" href="server-list-clients-example_8c-example.html#a11">server-list-clients-example.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -4480,13 +4576,324 @@ NULL if the ChangeSet is invalid. </dd></dl>
 
 </div>
 </div>
+<a class="anchor" id="a463d449a3fe7505276466739b0fcc1e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a> AwaServerSession_SetClientRegisterEventCallback </td>
+          <td>(</td>
+          <td class="paramtype">AwaServerSession *&#160;</td>
+          <td class="paramname"><em>session</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="server_8h.html#ab19ba143bfca93153603e824178efb21">AwaServerClientRegisterEventCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a callback function to be called whenever a Client registers with the server. </p>
+<p>Any existing callback function is replaced.</p>
+<p>The callback of type <a class="el" href="server_8h.html#ab19ba143bfca93153603e824178efb21" title="A user-specified callback handler for Server Notifications which will be fired on client registration...">AwaServerClientRegisterEventCallback</a> will be passed an event object and the context pointer specified here.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>A pointer to a valid session. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Function pointer to call when a client registers with the server. Pass NULL to clear. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>A pointer to a user specified object for use in the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AwaError_Success on success. </dd>
+<dd>
+AwaError_SessionInvalid if the specified session is invalid. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a13">server-event-example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="aaa959f87758e2115330c541c5bb1ba6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a> AwaServerSession_SetClientUpdateEventCallback </td>
+          <td>(</td>
+          <td class="paramtype">AwaServerSession *&#160;</td>
+          <td class="paramname"><em>session</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="server_8h.html#ae83e345ddc83e799c51affc7d39992eb">AwaServerClientUpdateEventCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a callback function to be called whenever a Client updates its registration with the server. </p>
+<p>Any existing callback function is replaced.</p>
+<p>The callback of type <a class="el" href="server_8h.html#ae83e345ddc83e799c51affc7d39992eb" title="A user-specified callback handler for Server Notifications which will be fired on client update...">AwaServerClientUpdateEventCallback</a> will be passed an event object and the context pointer specified here.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>A pointer to a valid session. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Function pointer to call when a client updates its registration with the server. Pass NULL to clear. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>A pointer to a user specified object for use in the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AwaError_Success on success. </dd>
+<dd>
+AwaError_SessionInvalid if the specified session is invalid. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a15">server-event-example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a52bf73f3cb96947cee95cbac5d7d2115"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a> AwaServerSession_SetClientDeregisterEventCallback </td>
+          <td>(</td>
+          <td class="paramtype">AwaServerSession *&#160;</td>
+          <td class="paramname"><em>session</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="server_8h.html#a770fcc86eaf9a297f5e4abe9dacb6626">AwaServerClientDeregisterEventCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a callback function to be called whenever a Client deregisters with the server. </p>
+<p>Any existing callback function is replaced.</p>
+<p>The callback of type <a class="el" href="server_8h.html#a770fcc86eaf9a297f5e4abe9dacb6626" title="A user-specified callback handler for Server Notifications which will be fired on client deregister...">AwaServerClientDeregisterEventCallback</a> will be passed an event object and the context pointer specified here.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>A pointer to a valid session. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Function pointer to call when a client deregisters with the server. Pass NULL to clear. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>A pointer to a user specified object for use in the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AwaError_Success on success. </dd>
+<dd>
+AwaError_SessionInvalid if the specified session is invalid. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a14">server-event-example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a103124a9ed490f21f77c9ba2f564f69c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AwaClientIterator* AwaServerClientRegisterEvent_NewClientIterator </td>
+          <td>(</td>
+          <td class="paramtype">const AwaServerClientRegisterEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new Client Iterator from a Client Register Event, used to iterate through the list of client endpoint names (IDs) held by the event. </p>
+<p>The resulting iterator is owned by the caller and should eventually be freed with <a class="el" href="server_8h.html#a5a0a60f471c24ced9241f3b5cd1a985a" title="Clean up a Client Iterator, freeing all allocated resources. ">AwaClientIterator_Free</a>. This function can only be successful within a Client Register Event callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>A pointer to a Client Register Event to iterate through. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new AwaClientIterator instance on success. </dd>
+<dd>
+NULL on failure. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a0">server-event-example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="aef6fed520a0f262513734505e07aa27f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AwaClientIterator* AwaServerClientUpdateEvent_NewClientIterator </td>
+          <td>(</td>
+          <td class="paramtype">const AwaServerClientUpdateEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new Client Iterator from a Client Update Event, used to iterate through the list of client endpoint names (IDs) held by the event. </p>
+<p>The resulting iterator is owned by the caller and should eventually be freed with <a class="el" href="server_8h.html#a5a0a60f471c24ced9241f3b5cd1a985a" title="Clean up a Client Iterator, freeing all allocated resources. ">AwaClientIterator_Free</a>. This function can only be successful within a Client Update Event callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>A pointer to a Client Update Event to iterate through. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new AwaClientIterator instance on success. </dd>
+<dd>
+NULL on failure. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a9">server-event-example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="ab98941b88412e09790f414db276c1384"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AwaClientIterator* AwaServerClientDeregisterEvent_NewClientIterator </td>
+          <td>(</td>
+          <td class="paramtype">const AwaServerClientDeregisterEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new Client Iterator from a Client Deregister Event, used to iterate through the list of client endpoint names (IDs) held by the event. </p>
+<p>The resulting iterator is owned by the caller and should eventually be freed with <a class="el" href="server_8h.html#a5a0a60f471c24ced9241f3b5cd1a985a" title="Clean up a Client Iterator, freeing all allocated resources. ">AwaClientIterator_Free</a>. This function can only be successful within a Client Deregister Event callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>A pointer to a Client Register Event to iterate through. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new AwaClientIterator instance on success. </dd>
+<dd>
+NULL on failure. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a8">server-event-example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="ad243625ccdb11b29c19599cfa51c1996"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AwaRegisteredEntityIterator* AwaServerClientRegisterEvent_NewRegisteredEntityIterator </td>
+          <td>(</td>
+          <td class="paramtype">const AwaServerClientRegisterEvent *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>clientID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new Registered Entity iterator for a Client Register Event, used to iterate through the list of objects and object instances that exist within the client the event relates to. </p>
+<p>The resulting iterator is owned by the caller and should eventually be freed with <a class="el" href="server_8h.html#ac7ff4aad565b4c89f854f9c4aa4c16f0" title="Clean up a Registered Entity Iterator, freeing all allocated resources. ">AwaRegisteredEntityIterator_Free</a>. This function can only be successful within a Client Register Event callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>A pointer to the Client Register Event to search. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clientID</td><td>The endpoint name of the registered client to search. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new AwaRegisteredEntityIterator instance on success. </dd>
+<dd>
+NULL on failure. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a3">server-event-example.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a39f4fff008a04cf86d5ee7d820b851c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AwaRegisteredEntityIterator* AwaServerClientUpdateEvent_NewRegisteredEntityIterator </td>
+          <td>(</td>
+          <td class="paramtype">const AwaServerClientUpdateEvent *&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>clientID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new Registered Entity iterator for a Client Update Event, used to iterate through the list of objects and object instances that exist within the client the event relates to. </p>
+<p>The resulting iterator is owned by the caller and should eventually be freed with <a class="el" href="server_8h.html#ac7ff4aad565b4c89f854f9c4aa4c16f0" title="Clean up a Registered Entity Iterator, freeing all allocated resources. ">AwaRegisteredEntityIterator_Free</a>. This function can only be successful within a Client Update Event callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>A pointer to the Client Update Event to search. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clientID</td><td>The endpoint name of the registered client to search. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new AwaRegisteredEntityIterator instance on success. </dd>
+<dd>
+NULL on failure. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="server-event-example_8c-example.html#a10">server-event-example.c</a>.</dd>
+</dl>
+</div>
+</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
    <b>Copyright (c) 2016, Imagination Technologies Limited</b>
 <BR>
-Generated on Fri May 20 2016 04:59:52 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 22 2016 21:55:24 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
