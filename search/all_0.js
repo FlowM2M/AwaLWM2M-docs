@@ -14,7 +14,6 @@ var searchData=
   ['awa_5f_5f_5farrayiterator_5fnext',['Awa___ArrayIterator_Next',['../group__ArrayIterator__Next.html',1,'']]],
   ['awa_5finvalid_5fid',['AWA_INVALID_ID',['../types_8h.html#a1a0281571bfd1f7b15ba7a96fd98d586',1,'types.h']]],
   ['awa_5fmax_5fid',['AWA_MAX_ID',['../types_8h.html#a17d649227df6dd3b8d78e01be28167c5',1,'types.h']]],
-  ['awa_5fopaque',['AWA_OPAQUE',['../static_8h.html#afddbf7cfd9e7d671e47d1b881562c4c2',1,'static.h']]],
   ['awaapi_5fispathvalid',['AwaAPI_IsPathValid',['../common_8h.html#a24e542626441118d69d840e77bd12cfe',1,'common.h']]],
   ['awaapi_5fmakeobjectinstancepath',['AwaAPI_MakeObjectInstancePath',['../common_8h.html#a6fe41594674e20991e67927983930191',1,'common.h']]],
   ['awaapi_5fmakeobjectpath',['AwaAPI_MakeObjectPath',['../common_8h.html#a1ab77d404ac5bf034da01667044f1a65',1,'common.h']]],
