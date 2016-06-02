@@ -128,6 +128,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac53ff0ed3f9b1727459b6cae93e8cece"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#ac53ff0ed3f9b1727459b6cae93e8cece">AwaServerSession_SetIPCAsUDP</a> (AwaServerSession *session, const char *address, unsigned short port)</td></tr>
 <tr class="memdesc:ac53ff0ed3f9b1727459b6cae93e8cece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the IPC mechanism used by the API to communicate with the Core.  <a href="#ac53ff0ed3f9b1727459b6cae93e8cece">More...</a><br/></td></tr>
 <tr class="separator:ac53ff0ed3f9b1727459b6cae93e8cece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4817e43864677ce1fc8cc9bde936afd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#a4817e43864677ce1fc8cc9bde936afd2">AwaServerSession_SetDefaultTimeout</a> (AwaServerSession *session, <a class="el" href="common_8h.html#ad6330ca332feb8d553f430466b3a364d">AwaTimeout</a> timeout)</td></tr>
+<tr class="memdesc:a4817e43864677ce1fc8cc9bde936afd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IPC connect timeout.  <a href="#a4817e43864677ce1fc8cc9bde936afd2">More...</a><br/></td></tr>
+<tr class="separator:a4817e43864677ce1fc8cc9bde936afd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11d020b60bbb88afb81afbc11ba7cdcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h.html#a11d020b60bbb88afb81afbc11ba7cdcc">AwaServerSession_Connect</a> (AwaServerSession *session)</td></tr>
 <tr class="memdesc:a11d020b60bbb88afb81afbc11ba7cdcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a session (configured with an IPC mechanism) to the Core.  <a href="#a11d020b60bbb88afb81afbc11ba7cdcc">More...</a><br/></td></tr>
 <tr class="separator:a11d020b60bbb88afb81afbc11ba7cdcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -748,6 +751,45 @@ AwaError_IPCError if an IPC error occurs. </dd>
 AwaError_SessionInvalid if the specified session is invalid. </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="client-subscribe-to-execute-example_8c-example.html#a5">client-subscribe-to-execute-example.c</a>.</dd>
 </dl>
+</div>
+</div>
+<a class="anchor" id="a4817e43864677ce1fc8cc9bde936afd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a> AwaServerSession_SetDefaultTimeout </td>
+          <td>(</td>
+          <td class="paramtype">AwaServerSession *&#160;</td>
+          <td class="paramname"><em>session</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_8h.html#ad6330ca332feb8d553f430466b3a364d">AwaTimeout</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set IPC connect timeout. </p>
+<p>Used internally by <a class="el" href="server_8h.html#a11d020b60bbb88afb81afbc11ba7cdcc" title="Connect a session (configured with an IPC mechanism) to the Core. ">AwaServerSession_Connect</a> and <a class="el" href="server_8h.html#a774afe758f40b8a71543e07c8624a1bd" title="When a session is no longer required, or if the application intends to sleep for some time...">AwaServerSession_Disconnect</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">session</td><td>Pointer to a valid server session. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>The time within which an IPC session Connect must complete to avoid timeout. It must be greater than 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AwaError_Success on success. </dd>
+<dd>
+Various errors on failure. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a11d020b60bbb88afb81afbc11ba7cdcc"></a>
@@ -4893,7 +4935,7 @@ NULL on failure. </dd></dl>
 <hr class="footer"/><address class="footer"><small>
    <b>Copyright (c) 2016, Imagination Technologies Limited</b>
 <BR>
-Generated on Tue May 31 2016 04:46:48 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 2 2016 04:35:39 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
