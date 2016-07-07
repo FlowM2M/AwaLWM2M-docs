@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['awacertificateformat_5fasn1',['AwaCertificateFormat_ASN1',['../types_8h.html#a129f5f4d25d1d4b1ed20932c1b3d2b23acac76b9cac2b8ed5f628a81b1ea965be',1,'types.h']]],
+  ['awacertificateformat_5fnone',['AwaCertificateFormat_None',['../types_8h.html#a129f5f4d25d1d4b1ed20932c1b3d2b23aedc49b712f4215bb979c2294796fc617',1,'types.h']]],
+  ['awacertificateformat_5fpem',['AwaCertificateFormat_PEM',['../types_8h.html#a129f5f4d25d1d4b1ed20932c1b3d2b23a55f1e0cee0d9c75b6f50ac3a5d9b9d5e',1,'types.h']]],
   ['awachangetype_5fcurrent',['AwaChangeType_Current',['../common_8h.html#a80f464e5f8f0e441bb5b8ada6b704e32a355cb8f66ac730c7356c55bcd0614d83',1,'common.h']]],
   ['awachangetype_5finvalid',['AwaChangeType_Invalid',['../common_8h.html#a80f464e5f8f0e441bb5b8ada6b704e32a01c3db05403555c6b2192974ff5f6457',1,'common.h']]],
   ['awachangetype_5fobjectinstancecreated',['AwaChangeType_ObjectInstanceCreated',['../common_8h.html#a80f464e5f8f0e441bb5b8ada6b704e32a682c77e40119c32a6b1934a85089f9b5',1,'common.h']]],
