@@ -242,6 +242,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af53d1cc7ff6121c09ce3f7df6b2be975"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#af53d1cc7ff6121c09ce3f7df6b2be975">AwaStaticClient_GetApplicationContext</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client)</td></tr>
 <tr class="memdesc:af53d1cc7ff6121c09ce3f7df6b2be975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a user-specified application context as a void pointer.  <a href="#af53d1cc7ff6121c09ce3f7df6b2be975">More...</a><br /></td></tr>
 <tr class="separator:af53d1cc7ff6121c09ce3f7df6b2be975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07fe5ab6d367c5b4110bd6f933a739bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a6c9840a15cd1399ab9df8944d0308408">AwaClientRegistrationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#a07fe5ab6d367c5b4110bd6f933a739bf">AwaStaticClient_GetRegistrationStatus</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client)</td></tr>
+<tr class="memdesc:a07fe5ab6d367c5b4110bd6f933a739bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve register status for the Awa Static Client.  <a href="#a07fe5ab6d367c5b4110bd6f933a739bf">More...</a><br /></td></tr>
+<tr class="separator:a07fe5ab6d367c5b4110bd6f933a739bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab47dd42eb1201da1686381f30003ff33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="error_8h.html#aa7aae894d475cf767e63d099b98efbac">AwaError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="static_8h.html#ab47dd42eb1201da1686381f30003ff33">AwaStaticClient_Init</a> (<a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *client)</td></tr>
 <tr class="memdesc:ab47dd42eb1201da1686381f30003ff33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise an Awa Static client.  <a href="#ab47dd42eb1201da1686381f30003ff33">More...</a><br /></td></tr>
 <tr class="separator:ab47dd42eb1201da1686381f30003ff33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1001,6 +1004,32 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the user-specified application context if it exists. </dd>
 <dd>
 NULL if <em>client</em> is NULL, or no application context was set by the user. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a07fe5ab6d367c5b4110bd6f933a739bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a6c9840a15cd1399ab9df8944d0308408">AwaClientRegistrationStatus</a> AwaStaticClient_GetRegistrationStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="static_8h.html#ab971838deb1ea0339405166ac070da4d">AwaStaticClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve register status for the Awa Static Client. </p>
+<p>This function should only be called after <a class="el" href="static_8h.html#ab47dd42eb1201da1686381f30003ff33" title="Initialise an Awa Static client. ">AwaStaticClient_Init</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">client</td><td>A pointer to a valid Awa Static Client. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Client registration status. </dd></dl>
 
 </div>
 </div>
@@ -1885,7 +1914,7 @@ AwaError_StaticClientInvalid if <em>client</em> is NULL or uninitialised. </dd><
 <hr class="footer"/><address class="footer"><small>
    <b>Copyright (c) 2016, Imagination Technologies Limited</b>
 <BR>
-Generated on Fri Jul 29 2016 01:50:01 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 31 2016 09:28:39 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

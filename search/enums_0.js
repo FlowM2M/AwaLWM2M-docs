@@ -2,6 +2,7 @@ var searchData=
 [
   ['awacertificateformat',['AwaCertificateFormat',['../types_8h.html#a129f5f4d25d1d4b1ed20932c1b3d2b23',1,'types.h']]],
   ['awachangetype',['AwaChangeType',['../common_8h.html#a80f464e5f8f0e441bb5b8ada6b704e32',1,'common.h']]],
+  ['awaclientregistrationstatus',['AwaClientRegistrationStatus',['../types_8h.html#a6c9840a15cd1399ab9df8944d0308408',1,'types.h']]],
   ['awacontenttype',['AwaContentType',['../types_8h.html#a78bffa39cb17ae778c6804ec9081e488',1,'types.h']]],
   ['awaerror',['AwaError',['../error_8h.html#aa7aae894d475cf767e63d099b98efbac',1,'error.h']]],
   ['awaloglevel',['AwaLogLevel',['../types_8h.html#a7efd0db4b3ec1176fd9938dcc0dbde39',1,'types.h']]],

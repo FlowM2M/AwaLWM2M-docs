@@ -260,6 +260,23 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a78bffa39cb17ae778c6804ec9081e488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9840a15cd1399ab9df8944d0308408"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a6c9840a15cd1399ab9df8944d0308408">AwaClientRegistrationStatus</a> { <br />
+&#160;&#160;<a class="el" href="types_8h.html#a6c9840a15cd1399ab9df8944d0308408a6f291832e80cd81f670d8e5136fc160f">AwaClientRegistrationStatus_Invalid</a>, 
+<br />
+&#160;&#160;<a class="el" href="types_8h.html#a6c9840a15cd1399ab9df8944d0308408ab14d173d7f10b784052844c2b1b3c8dd">AwaClientRegistrationStatus_Bootstrap</a>, 
+<br />
+&#160;&#160;<a class="el" href="types_8h.html#a6c9840a15cd1399ab9df8944d0308408a0fd4477ec0ff68473a8dd2d6bfe66946">AwaClientRegistrationStatus_BootstrapFailed</a>, 
+<br />
+&#160;&#160;<a class="el" href="types_8h.html#a6c9840a15cd1399ab9df8944d0308408a5530906b8be6b8c54b403f00632d0539">AwaClientRegistrationStatus_NotRegistered</a>, 
+<br />
+&#160;&#160;<a class="el" href="types_8h.html#a6c9840a15cd1399ab9df8944d0308408aa2125dce08ed58824e1c181264b9b98c">AwaClientRegistrationStatus_Registering</a>, 
+<br />
+&#160;&#160;<a class="el" href="types_8h.html#a6c9840a15cd1399ab9df8944d0308408af021ae25995ea3cdd09c469519901582">AwaClientRegistrationStatus_Registered</a>, 
+<br />
+&#160;&#160;<a class="el" href="types_8h.html#a6c9840a15cd1399ab9df8944d0308408a80662ce46bc91b2e54e701e531756e3d">AwaClientRegistrationStatus_RegisterFailed</a>
+<br />
+ }</td></tr>
+<tr class="separator:a6c9840a15cd1399ab9df8944d0308408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides definitions for types and enums used by Awa LWM2M API and Static API. </p>
@@ -625,13 +642,48 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6c9840a15cd1399ab9df8944d0308408"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="types_8h.html#a6c9840a15cd1399ab9df8944d0308408">AwaClientRegistrationStatus</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a6c9840a15cd1399ab9df8944d0308408a6f291832e80cd81f670d8e5136fc160f"></a>AwaClientRegistrationStatus_Invalid&#160;</td><td class="fielddoc">
+<p>invalid client reference </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a6c9840a15cd1399ab9df8944d0308408ab14d173d7f10b784052844c2b1b3c8dd"></a>AwaClientRegistrationStatus_Bootstrap&#160;</td><td class="fielddoc">
+<p>bootstrap in progress </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a6c9840a15cd1399ab9df8944d0308408a0fd4477ec0ff68473a8dd2d6bfe66946"></a>AwaClientRegistrationStatus_BootstrapFailed&#160;</td><td class="fielddoc">
+<p>bootstrap failed </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a6c9840a15cd1399ab9df8944d0308408a5530906b8be6b8c54b403f00632d0539"></a>AwaClientRegistrationStatus_NotRegistered&#160;</td><td class="fielddoc">
+<p>not registered (to any server) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a6c9840a15cd1399ab9df8944d0308408aa2125dce08ed58824e1c181264b9b98c"></a>AwaClientRegistrationStatus_Registering&#160;</td><td class="fielddoc">
+<p>register in progress (and not registered or failed on another server) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a6c9840a15cd1399ab9df8944d0308408af021ae25995ea3cdd09c469519901582"></a>AwaClientRegistrationStatus_Registered&#160;</td><td class="fielddoc">
+<p>register complete (to at least one server) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a6c9840a15cd1399ab9df8944d0308408a80662ce46bc91b2e54e701e531756e3d"></a>AwaClientRegistrationStatus_RegisterFailed&#160;</td><td class="fielddoc">
+<p>register failed (and not registered on another server) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
    <b>Copyright (c) 2016, Imagination Technologies Limited</b>
 <BR>
-Generated on Fri Jul 29 2016 01:50:01 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 31 2016 09:28:39 for Awa LWM2M C API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

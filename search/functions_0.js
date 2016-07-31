@@ -402,6 +402,7 @@ var searchData=
   ['awastaticclient_5ffree',['AwaStaticClient_Free',['../static_8h.html#ac56fc24058290bd3d1c6c6f35f6d282c',1,'static.h']]],
   ['awastaticclient_5fgetapplicationcontext',['AwaStaticClient_GetApplicationContext',['../static_8h.html#af53d1cc7ff6121c09ce3f7df6b2be975',1,'static.h']]],
   ['awastaticclient_5fgetdefaultcontenttype',['AwaStaticClient_GetDefaultContentType',['../static_8h.html#a112e8cc81c49d461dc01abbe1271566b',1,'static.h']]],
+  ['awastaticclient_5fgetregistrationstatus',['AwaStaticClient_GetRegistrationStatus',['../static_8h.html#a07fe5ab6d367c5b4110bd6f933a739bf',1,'static.h']]],
   ['awastaticclient_5fgetresourceinstancepointer',['AwaStaticClient_GetResourceInstancePointer',['../static_8h.html#a91389f04944f84a9a5094a270529e127',1,'static.h']]],
   ['awastaticclient_5finit',['AwaStaticClient_Init',['../static_8h.html#ab47dd42eb1201da1686381f30003ff33',1,'static.h']]],
   ['awastaticclient_5fnew',['AwaStaticClient_New',['../static_8h.html#a2636591dc64507abf759fb4c29592186',1,'static.h']]],
